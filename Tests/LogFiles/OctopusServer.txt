@@ -1,0 +1,28 @@
+2016-05-30 00:00:00.1811   2749  INFO  Reader took 353ms (319ms until the first record): SELECT * FROM dbo.[Dashboard] ORDER BY Id
+2016-05-30 08:49:44.9164   2283 ERROR  Unhandled exception from web server: The semaphore timeout period has expired
+System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired
+   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)
+   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\work\refs\tags\3.3.15\source\Octopus.Server\Web\Infrastructure\NancyCompression.cs:line 100
+   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\work\refs\tags\3.3.15\source\Octopus.Server\Web\OctopusNancyHost.cs:line 350
+   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\work\refs\tags\3.3.15\source\Octopus.Server\Web\OctopusNancyHost.cs:line 338
+   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)
+   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\work\refs\tags\3.3.15\source\Octopus.Server\Web\OctopusNancyHost.cs:line 0
+2016-05-30 08:49:46.0918   1717  INFO  poll://b2yf9fvn5hggm5hvjz72/   1717  Request IScriptService::GetStatus[610] / d5d0972f-1db3-4cde-ac71-5e42c9114040 was queued
+2016-05-30 08:49:46.0918   1717  INFO  poll://b2yf9fvn5hggm5hvjz72/   1717  Request IScriptService::GetStatus[610] / d5d0972f-1db3-4cde-ac71-5e42c9114040 was collected by the polling endpoint
+2016-05-30 08:49:46.1074   1716  INFO  Reader took 332ms (332ms until the first record): SELECT * FROM dbo.[Dashboard] WHERE (ProjectId = @projectId) ORDER BY Id
+2016-05-30 08:49:46.2636   2426  INFO  Reader took 435ms (279ms until the first record): SELECT * FROM dbo.[Dashboard] ORDER BY Id
+2016-05-30 08:49:46.4512   1056  INFO  listen://[::]:10943/           1056  Accepted TCP client: [::ffff:82.208.129.105]:63248
+2016-05-30 08:49:46.4512   1062  INFO  listen://[::]:10943/           1062  Performing TLS server handshake
+2016-05-30 08:49:46.4980   1062  DEBUG listen://[::]:10943/           1062  Secure connection established, client is not yet authenticated, client connected with Tls12
+2016-05-30 08:49:46.5918   1062  INFO  listen://[::]:10943/           1062  A client at [::ffff:82.208.129.105]:63248 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '644500E8DEB23FA2FE6E009897A0DC4CA51B07BF' which is not in the list of thumbprints that we trust
+2016-05-30 08:49:46.6856   2413  INFO  poll://b2yf9fvn5hggm5hvjz72/   2413  Request IScriptService::GetStatus[177] / 25f849d3-fc86-476c-ba02-de8eeb3566dc was queued
+2016-05-30 08:49:46.6856   2413  INFO  poll://b2yf9fvn5hggm5hvjz72/   2413  Request IScriptService::GetStatus[177] / 25f849d3-fc86-476c-ba02-de8eeb3566dc was collected by the polling endpoint
+2016-05-30 08:49:46.7949   2424  INFO  listen://[::]:10943/           2424  Accepted TCP client: [::ffff:40.68.217.115]:1215
+2016-05-30 12:09:20.3683    412  INFO  Reader took 406ms (362ms until the first record): SELECT * FROM dbo.[Dashboard] ORDER BY Id
+2016-05-30 12:09:20.4621     38  INFO  Request took 1320ms: POST http://octopus.veinteractive.com/api/users/login
+2016-05-30 12:09:22.8216    530  INFO  listen://[::]:10943/            530  A client at [::ffff:40.68.217.115]:1198 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '5A53F4E04DE1216DFCAD66735FD04120DB70C74D' which is not in the list of thumbprints that we trust
