@@ -1,6 +1,6 @@
 # Flat log file to Seq importer
 
-A quick and dirty log file parser and export to Seq, if logging to a friendlies format is not available
+A quick and dirty log file parser and export to Seq, if logging to a friendly format is not available
 
 Features:
 - Autodetects file type
