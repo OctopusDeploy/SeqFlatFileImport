@@ -25,7 +25,7 @@ namespace SeqFlatFileImport
             {
                 {"h|?|help", v => help = v != null},
                 {"server=", v => options.SeqServer = v},
-                {"apikey=", v => options.SeqApiKey = v},
+            //    {"apikey=", v => options.SeqApiKey = v},
                 {"format=", v => options.Format = v},
                 {"batch=", v => options.BatchId = v}
             };

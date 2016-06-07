@@ -26,6 +26,7 @@ namespace SeqFlatFileImport
         private readonly string _apiKey;
         private List<RawEvent> _events = new List<RawEvent>(BatchSize);
         private readonly List<Task<IResult>> _sendTasks = new List<Task<IResult>>();
+        private readonly SemaphoreSlim _semaphore = new SemaphoreSlim(5);
 
         public SeqEndpoint(string uri = DefaultUri, string apiKey = null, string batchId = null)
         {
@@ -48,6 +49,7 @@ namespace SeqFlatFileImport
 
         private async Task<IResult> Send(List<RawEvent> events)
         {
+            await _semaphore.WaitAsync();
             try
             {
                 var json = JsonConvert.SerializeObject(new {Events = events});
@@ -64,12 +66,19 @@ namespace SeqFlatFileImport
             {
                 return Result.Failed(ex.Message);
             }
+            finally
+            {
+                _semaphore.Release();
+            }
         }
 
         public IResult Flush()
         {
             if (_events.Count > 0)
+            {
                 _sendTasks.Add(Send(_events));
+                _events = new List<RawEvent>(BatchSize);
+            }
             var results = Task.WhenAll(_sendTasks.ToArray()).Result;
             return Result.From(results);
         }

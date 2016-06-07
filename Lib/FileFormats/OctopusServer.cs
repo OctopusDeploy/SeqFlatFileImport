@@ -21,8 +21,8 @@ namespace SeqFlatFileImport.FileFormats
                 "Reader took {Time}ms ({FirstRecord}ms until the first record): {Query}"
                 ),
             new TemplateRegex(
-                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Query>.*)$"),
-                "Request took {Time}ms: {Query}"
+                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+) (?<Query>.*)$"),
+                "Request took {Time}ms: {Method} {Query}"
                 ),
             new TemplateRegex(
                 new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)$"),
@@ -141,7 +141,15 @@ namespace SeqFlatFileImport.FileFormats
                 if (match.Success)
                 {
                     foreach (var name in tr.Regex.GetGroupNames().Where(n => n != "0"))
-                        properties[name] = match.Groups[name].Value;
+                    {
+                        string strVal = match.Groups[name].Value;
+                        int intVal;
+                        if(int.TryParse(strVal, out intVal))
+                            properties[name] = intVal;
+                        else
+                            properties[name] = strVal;
+                    }
+
 
                     return tr.Template;
                 }
@@ -160,7 +168,7 @@ namespace SeqFlatFileImport.FileFormats
                 case "WARN":
                     return "Warning";
                 case "DEBUG":
-                    return "Debug";
+                    return "Verboase";
                 default:
                     return "Information";
             }

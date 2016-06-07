@@ -32,7 +32,7 @@ namespace SeqFlatFileImport.FileFormats
                 {
                     if (line.StartsWith("#Fields"))
                     {
-                        fieldNames = line.Split(' ').Skip(1).ToArray();
+                        fieldNames = line.Split(' ').Skip(1).Select(s => s.Replace("-", "_")).ToArray();
                     }
                 }
                 else
@@ -47,7 +47,7 @@ namespace SeqFlatFileImport.FileFormats
                     {
                         Timestamp = GetTimestamp(properties),
                         Level = "Information",
-                        MessageTemplate = "{cs-method} {time-taken} {sc-status} {cs-uri-stem} {cs-username} {c-ip}",
+                        MessageTemplate = "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
                         Properties = properties
                     };
                 }

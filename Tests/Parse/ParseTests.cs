@@ -33,6 +33,13 @@ namespace SeqFlatFileImport.Tests.Parse
             Execute("u_ex160412.log");
         }
 
+        [Test]
+        [UseReporter(typeof(BeyondCompareReporter))]
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        public void OctopusTask()
+        {
+            Execute("ServerTasks-16572.log.txt");
+        }
 
 
         public void Execute(string inputFileName)

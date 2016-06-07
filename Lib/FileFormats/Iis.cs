@@ -33,7 +33,7 @@ namespace SeqFlatFileImport.FileFormats
                 {
                     if (line.StartsWith("#Fields"))
                     {
-                        fieldNames = line.Split(' ').Skip(1).ToArray();
+                        fieldNames = line.Split(' ').Skip(1).Select(s => s.Replace("-", "_")).ToArray();
                         template = GetTemplate(fieldNames);
                     }
                 }
@@ -59,20 +59,20 @@ namespace SeqFlatFileImport.FileFormats
         private string GetTemplate(string[] fieldNames)
         {
             var sb = new StringBuilder();
-            if (fieldNames.Contains("cs-method"))
-                sb.Append("{cs-method}");
-            if (fieldNames.Contains("time-taken"))
-                sb.Append(" {time-taken}");
-            if (fieldNames.Contains("sc-status"))
+            if (fieldNames.Contains("cs_method"))
+                sb.Append("{cs_method}");
+            if (fieldNames.Contains("time_taken"))
+                sb.Append(" {time_taken}");
+            if (fieldNames.Contains("sc_status"))
             {
-                sb.Append("{sc-status}");
-                if (fieldNames.Contains("sc-substatus"))
-                    sb.Append(".{sc-substatus}");
+                sb.Append("{sc_status}");
+                if (fieldNames.Contains("sc_substatus"))
+                    sb.Append(".{sc_substatus}");
             }
-            if (fieldNames.Contains("cs-uri-stem"))
-                sb.Append(" {cs-uri-stem} ");
-            if (fieldNames.Contains("cs-uri-query"))
-                sb.Append(" {cs-uri-query} ");
+            if (fieldNames.Contains("cs_uri_stem"))
+                sb.Append(" {cs_uri_stem} ");
+            if (fieldNames.Contains("cs_uri_query"))
+                sb.Append(" {cs_uri_query} ");
             return sb.ToString().Trim();
         }
 

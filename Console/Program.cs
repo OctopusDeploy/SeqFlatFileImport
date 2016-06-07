@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -16,7 +17,6 @@ namespace SeqFlatFileImport
 
             if (!CheckFilesExist(options.InputFiles))
                 return 2;
-
             var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: Console.WriteLine, batchId: options.BatchId);
             foreach (var file in options.InputFiles)
             {
