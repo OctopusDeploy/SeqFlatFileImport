@@ -35,7 +35,7 @@ namespace SeqFlatFileImport.FileFormats
                     Level = ParseLevel(json.ElementAt(1).ToString()),
                     MessageTemplate = json.ElementAt(3).ToString(),
                     Timestamp = ParseTime(json.ElementAt(2).ToString()),
-                    Properties = ParseProperties(json.ElementAt(0).ToString())
+                    Properties = ParseProperties(json.ElementAt(0).ToString(), json.ElementAt(3).ToString())
                 };
             }
         }
@@ -65,14 +65,33 @@ namespace SeqFlatFileImport.FileFormats
         }
 
         private static readonly Regex TaskId = new Regex(@"^(?<TaskId>\w+-\d+)");
+        private readonly IDictionary<string, string> correlationProperties = new Dictionary<string, string>();
 
-        private static Dictionary<string, object> ParseProperties(string correlationId)
+        private Dictionary<string, object> ParseProperties(string correlationId, string message)
         {
-            var match = TaskId.Match(correlationId);
+            var properties = new Dictionary<string, object>();
 
-            return new Dictionary<string, object> {
-                { "Task ID", match.Groups["TaskId"].Value }
-            };
+            var tokens = correlationId.Split('/');
+
+            var match = TaskId.Match(tokens[0]);
+            properties.Add("Task ID", match.Groups["TaskId"].Value);
+
+            for (var i = 1; i < tokens.Length; i++)
+            {
+                var token = tokens[i];
+                string value;
+                if (correlationProperties.TryGetValue(token, out value))
+                {
+                    properties[$"Property {i}"] = value;
+                }
+                else
+                {
+                    properties[$"Property {i}"] = message;
+                    correlationProperties[token] = message;
+                }
+            }
+
+            return properties;
         }
     }
 }
