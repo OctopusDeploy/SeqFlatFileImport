@@ -47,6 +47,7 @@
     <Compile Include="FileFormats\IFileFormat.cs" />
     <Compile Include="FileFormats\Iis.cs" />
     <Compile Include="FileFormats\OctopusServer.cs" />
+    <Compile Include="FileFormats\OctopusRawTask.cs" />
     <Compile Include="FileFormats\OctopusTask.cs" />
     <Compile Include="FileFormats\OctopusWebLog.cs" />
     <Compile Include="Importer.cs" />

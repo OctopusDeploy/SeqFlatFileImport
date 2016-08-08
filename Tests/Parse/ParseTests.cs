@@ -36,11 +36,18 @@ namespace SeqFlatFileImport.Tests.Parse
         [Test]
         [UseReporter(typeof(BeyondCompareReporter))]
         [MethodImpl(MethodImplOptions.NoInlining)]
-        public void OctopusTask()
+        public void OctopusRawTask()
         {
             Execute("ServerTasks-16572.log.txt");
         }
 
+        [Test]
+        [UseReporter(typeof (BeyondCompareReporter))]
+        [MethodImpl(MethodImplOptions.NoInlining)]
+        public void OctopusTask()
+        {
+            Execute("servertasks-21_gjzwyyv2kt.txt");
+        }
 
         public void Execute(string inputFileName)
         {
