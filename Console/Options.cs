@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using NDesk.Options;
 
 namespace SeqFlatFileImport
@@ -11,7 +10,7 @@ namespace SeqFlatFileImport
         {
         }
 
-        public IReadOnlyList<string> InputFiles { get; private set; }
+        public IReadOnlyList<string> InputPaths { get; private set; }
         public string SeqServer { get; private set; }
         public string SeqApiKey { get; private set; }
         public string Format { get; private set; }
@@ -21,7 +20,7 @@ namespace SeqFlatFileImport
         {
             var options = new Options();
             var help = false;
-            var optionSet = new OptionSet()
+            var optionSet = new OptionSet
             {
                 {"h|?|help", v => help = v != null},
                 {"server=", v => options.SeqServer = v},
@@ -30,14 +29,14 @@ namespace SeqFlatFileImport
                 {"batch=", v => options.BatchId = v}
             };
 
-            options.InputFiles = optionSet.Parse(args);
+            options.InputPaths = optionSet.Parse(args);
             if (help)
             {
                 optionSet.WriteOptionDescriptions(Console.Out);
                 return null;
             }
 
-            if (options.InputFiles.Count == 0)
+            if (options.InputPaths.Count == 0)
             {
                 Console.Error.WriteLine("No input files specified");
                 return null;

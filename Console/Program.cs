@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Runtime.CompilerServices;
 
 namespace SeqFlatFileImport
 {
@@ -15,10 +13,12 @@ namespace SeqFlatFileImport
             if (options == null)
                 return 1;
 
-            if (!CheckFilesExist(options.InputFiles))
+            if (!CheckFilesOrDirectoriesExist(options.InputPaths))
                 return 2;
+
+            var inputFiles = GetFiles(options.InputPaths);
             var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: Console.WriteLine, batchId: options.BatchId);
-            foreach (var file in options.InputFiles)
+            foreach (var file in inputFiles)
             {
                 WriteLine(ConsoleColor.White, $"Importing {file}... ");
                 var result = importer.Import(file, options.Format);
@@ -38,15 +38,25 @@ namespace SeqFlatFileImport
         }
 
 
-        private static bool CheckFilesExist(IReadOnlyList<string> inputFiles)
+        private static bool CheckFilesOrDirectoriesExist(IReadOnlyList<string> inputFiles)
         {
-            var notExist = inputFiles.Where(f => !File.Exists(f)).ToArray();
+            var notExist = inputFiles.Where(f => !File.Exists(f) && !Directory.Exists(f)).ToArray();
             if (!notExist.Any())
                 return true;
 
-            WriteError("The following files could not be found:");
+            WriteError("The following paths could not be found:");
             WriteError(notExist);
             return false;
+        }
+
+        private static IReadOnlyList<string> GetFiles(IReadOnlyList<string> inputPaths)
+        {
+            var files = inputPaths.Where(File.Exists).ToArray();
+            var filesInDirectory = inputPaths.Except(files)
+                .Where(Directory.Exists)
+                .SelectMany(Directory.EnumerateFiles);
+
+            return files.Concat(filesInDirectory).ToList();
         }
 
         private static void WriteLine(ConsoleColor colour, string str)
