@@ -21,7 +21,7 @@ namespace SeqFlatFileImport.Tests.Parse
         [MethodImpl(MethodImplOptions.NoInlining)]
         public void OctopusWebLog()
         {
-            Execute("Web-2016-05-29.log");
+            Execute("Web-2017-01-18.log");
         }
 
 
@@ -30,13 +30,13 @@ namespace SeqFlatFileImport.Tests.Parse
         [MethodImpl(MethodImplOptions.NoInlining)]
         public void Iis()
         {
-            Execute("u_ex160412.log");
+            Execute("u_ex170117.log");
         }
 
         [Test]
         [UseReporter(typeof(BeyondCompareReporter))]
         [MethodImpl(MethodImplOptions.NoInlining)]
-        public void OctopusRawTask()
+        public void OctopusTask()
         {
             Execute("ServerTasks-16572.log.txt");
         }
@@ -44,7 +44,7 @@ namespace SeqFlatFileImport.Tests.Parse
         [Test]
         [UseReporter(typeof (BeyondCompareReporter))]
         [MethodImpl(MethodImplOptions.NoInlining)]
-        public void OctopusTask()
+        public void OctopusRawTask()
         {
             Execute("servertasks-21_gjzwyyv2kt.txt");
         }

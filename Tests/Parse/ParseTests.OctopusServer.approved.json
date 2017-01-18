@@ -6,8 +6,8 @@
         "Properties": {
             "LineNumber": 1,
             "Thread": "2749",
-            "Time": "353",
-            "FirstRecord": "319",
+            "Time": 353,
+            "FirstRecord": 319,
             "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
         },
         "Exception": null
@@ -54,8 +54,8 @@
         "Properties": {
             "LineNumber": 17,
             "Thread": "1716",
-            "Time": "332",
-            "FirstRecord": "332",
+            "Time": 332,
+            "FirstRecord": 332,
             "Query": "SELECT * FROM dbo.[Dashboard] WHERE (ProjectId = @projectId) ORDER BY Id"
         },
         "Exception": null
@@ -67,8 +67,8 @@
         "Properties": {
             "LineNumber": 18,
             "Thread": "2426",
-            "Time": "435",
-            "FirstRecord": "279",
+            "Time": 435,
+            "FirstRecord": 279,
             "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
         },
         "Exception": null
@@ -81,7 +81,7 @@
             "LineNumber": 19,
             "Thread": "1056",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "Accepted TCP client: [::ffff:82.208.129.105]:63248"
         },
         "Exception": null
@@ -94,20 +94,20 @@
             "LineNumber": 20,
             "Thread": "1062",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "Performing TLS server handshake"
         },
         "Exception": null
     },
     {
         "Timestamp": "2016-05-30T08:49:46.498+10:00",
-        "Level": "Debug",
+        "Level": "Verboase",
         "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
         "Properties": {
             "LineNumber": 21,
             "Thread": "1062",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "Secure connection established, client is not yet authenticated, client connected with Tls12"
         },
         "Exception": null
@@ -120,7 +120,7 @@
             "LineNumber": 22,
             "Thread": "1062",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "A client at [::ffff:82.208.129.105]:63248 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '644500E8DEB23FA2FE6E009897A0DC4CA51B07BF' which is not in the list of thumbprints that we trust"
         },
         "Exception": null
@@ -157,7 +157,7 @@
             "LineNumber": 25,
             "Thread": "2424",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "Accepted TCP client: [::ffff:40.68.217.115]:1215"
         },
         "Exception": null
@@ -169,8 +169,8 @@
         "Properties": {
             "LineNumber": 26,
             "Thread": "412",
-            "Time": "406",
-            "FirstRecord": "362",
+            "Time": 406,
+            "FirstRecord": 362,
             "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
         },
         "Exception": null
@@ -178,12 +178,13 @@
     {
         "Timestamp": "2016-05-30T12:09:20.4621+10:00",
         "Level": "Information",
-        "MessageTemplate": "Request took {Time}ms: {Query}",
+        "MessageTemplate": "Request took {Time}ms: {Method} {Query}",
         "Properties": {
             "LineNumber": 27,
             "Thread": "38",
-            "Time": "1320",
-            "Query": "POST http://octopus.veinteractive.com/api/users/login"
+            "Time": 1320,
+            "Method": "POST",
+            "Query": "http://octopus.veinteractive.com/api/users/login"
         },
         "Exception": null
     },
@@ -195,7 +196,7 @@
             "LineNumber": 28,
             "Thread": "530",
             "IP": "[::]",
-            "Port": "10943",
+            "Port": 10943,
             "Message": "A client at [::ffff:40.68.217.115]:1198 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '5A53F4E04DE1216DFCAD66735FD04120DB70C74D' which is not in the list of thumbprints that we trust"
         },
         "Exception": null
