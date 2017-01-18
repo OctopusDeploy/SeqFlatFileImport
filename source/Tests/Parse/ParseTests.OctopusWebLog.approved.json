@@ -1,0 +1,631 @@
+﻿[
+  {
+    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:55",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "659"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:55",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/users/me",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "80"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:55",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/users/Users-1/permissions",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "83"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:55",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/featuresconfiguration",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "51"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "120"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "90"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "262"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "33"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-61/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "81"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-41/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "103"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-81/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "116"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-1/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "88"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:56",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-21/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "196"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:57+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:57",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "37"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:58",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/double-test",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "79"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:58",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tagsets/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "75"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:58",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-81/logo",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "60"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:58",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/deploymentprocesses/deploymentprocess-Projects-81",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "113"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:58",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tagsets/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "118"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-81/triggers",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "154"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tenants/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "166"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-81/releases",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "175"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tenants/variables-missing",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "195"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/progression/Projects-81",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "194"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:58:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:58:59",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-81/channels",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "74"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:00",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "46"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:00",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/packages",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "108"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:00",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus/nuget",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "49"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:00",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/repository/configuration",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "54"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:01",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "84"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:01",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/octopusservernodes/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "113"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:01",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/environments/all",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "113"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:01",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tasks",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "185"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:01",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tasks",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "50"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:05",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tasks",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "120"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:05",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tasks",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "98"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-18T03:59:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-01-18",
+      "time": "03:59:06",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "80",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "53"
+    },
+    "Exception": null
+  }
+]

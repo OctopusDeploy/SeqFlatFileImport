@@ -1,6 +1,8 @@
+using System.IO;
 using System.Runtime.CompilerServices;
-using ApprovalTests;
-using ApprovalTests.Reporters;
+using Assent;
+using Assent.Namers;
+using Newtonsoft.Json;
 using NUnit.Framework;
 using SeqFlatFileImport.Tests.Helpers;
 
@@ -9,16 +11,12 @@ namespace SeqFlatFileImport.Tests.Parse
     public class ParseTests
     {
         [Test]
-        [UseReporter(typeof(BeyondCompareReporter))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
         public void OctopusServer()
         {
             Execute("OctopusServer.txt");
         }
 
         [Test]
-        [UseReporter(typeof(BeyondCompareReporter))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
         public void OctopusWebLog()
         {
             Execute("Web-2017-01-18.log");
@@ -26,38 +24,34 @@ namespace SeqFlatFileImport.Tests.Parse
 
 
         [Test]
-        [UseReporter(typeof(BeyondCompareReporter))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
         public void Iis()
         {
             Execute("u_ex170117.log");
         }
 
         [Test]
-        [UseReporter(typeof(BeyondCompareReporter))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
         public void OctopusTask()
         {
             Execute("ServerTasks-16572.log.txt");
         }
 
         [Test]
-        [UseReporter(typeof (BeyondCompareReporter))]
-        [MethodImpl(MethodImplOptions.NoInlining)]
         public void OctopusRawTask()
         {
             Execute("servertasks-21_gjzwyyv2kt.txt");
         }
 
-        public void Execute(string inputFileName)
+        public void Execute(string inputFileName, [CallerMemberName] string testName = null)
         {
             var seqServer = new StubSeqEndpoint();
             var result = new Importer(seqServer)
                 .Import(TestHelper.GetFilePath(inputFileName));
             result.ShouldBeSuccessful();
-            Approvals.VerifyJson(seqServer.LogsAsJson);
+            this.Assent(
+                seqServer.LogsAsJson,
+                new Configuration().UsingExtension("json"),
+                testName: testName
+            );
         }
-
-
     }
 }

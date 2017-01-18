@@ -1,0 +1,71 @@
+﻿[
+  {
+    "Timestamp": "2017-01-17T01:41:39+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken}{sc_status}.{sc_substatus} {cs_uri_stem}  {cs_uri_query}",
+    "Properties": {
+      "date": "2017-01-17",
+      "time": "01:41:39",
+      "s_ip": "::1",
+      "cs_method": "GET",
+      "cs_uri_stem": "/",
+      "cs_uri_query": "-",
+      "s_port": "80",
+      "cs_username": "-",
+      "c_ip": "::1",
+      "cs(User_Agent)": "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/55.0.2883.87+Safari/537.36",
+      "cs(Referer)": "-",
+      "sc_status": "200",
+      "sc_substatus": "0",
+      "sc_win32_status": "64",
+      "time_taken": "576"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-17T01:41:39+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken}{sc_status}.{sc_substatus} {cs_uri_stem}  {cs_uri_query}",
+    "Properties": {
+      "date": "2017-01-17",
+      "time": "01:41:39",
+      "s_ip": "::1",
+      "cs_method": "GET",
+      "cs_uri_stem": "/",
+      "cs_uri_query": "-",
+      "s_port": "80",
+      "cs_username": "-",
+      "c_ip": "::1",
+      "cs(User_Agent)": "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/55.0.2883.87+Safari/537.36",
+      "cs(Referer)": "-",
+      "sc_status": "200",
+      "sc_substatus": "0",
+      "sc_win32_status": "0",
+      "time_taken": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-01-17T01:41:39+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken}{sc_status}.{sc_substatus} {cs_uri_stem}  {cs_uri_query}",
+    "Properties": {
+      "date": "2017-01-17",
+      "time": "01:41:39",
+      "s_ip": "::1",
+      "cs_method": "GET",
+      "cs_uri_stem": "/iisstart.png",
+      "cs_uri_query": "-",
+      "s_port": "80",
+      "cs_username": "-",
+      "c_ip": "::1",
+      "cs(User_Agent)": "Mozilla/5.0+(Windows+NT+10.0;+Win64;+x64)+AppleWebKit/537.36+(KHTML,+like+Gecko)+Chrome/55.0.2883.87+Safari/537.36",
+      "cs(Referer)": "http://localhost/",
+      "sc_status": "304",
+      "sc_substatus": "0",
+      "sc_win32_status": "0",
+      "time_taken": "1"
+    },
+    "Exception": null
+  }
+]
