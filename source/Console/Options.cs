@@ -38,7 +38,7 @@ namespace SeqFlatFileImport
 
             if (options.InputPaths.Count == 0)
             {
-                Console.Error.WriteLine("No input files specified");
+                Console.Error.WriteLine("No input files or directories specified");
                 return null;
             }
 

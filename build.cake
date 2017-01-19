@@ -2,6 +2,7 @@
 // TOOLS
 //////////////////////////////////////////////////////////////////////
 #tool "nuget:?package=GitVersion.CommandLine&version=3.6.4"
+#tool "nuget:?package=ILRepack&version=2.0.11"
 #addin "MagicChunks"
 
 using Path = System.IO.Path;
@@ -16,6 +17,7 @@ var configuration = Argument("configuration", "Release");
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
+var publishDir = "./publish";
 var artifactsDir = "./artifacts";
 var cleanups = new List<Action>();
 var isContinuousIntegrationBuild = !BuildSystem.IsLocalBuild;
@@ -55,6 +57,7 @@ Task("__Clean")
     .Does(() =>
 {
     CleanDirectory(artifactsDir);
+    CleanDirectory(publishDir);
     CleanDirectories("./source/**/bin");
     CleanDirectories("./source/**/obj");
 });
@@ -106,6 +109,43 @@ Task("__Test")
         });
 });
 
+Task("__DotnetPublish")
+    .IsDependentOn("__Test")
+    .Does(() =>
+{
+    DotNetCorePublish("source/Console", new DotNetCorePublishSettings
+    {
+        Configuration = configuration,
+        OutputDirectory = publishDir
+    });
+});
+
+Task("__Merge")
+    .IsDependentOn("__DotnetPublish")
+    .Does(() => {
+        CreateDirectory(artifactsDir);
+
+        var inputFolder = publishDir;
+        var outputFolder = artifactsDir;
+        CreateDirectory(outputFolder);
+        ILRepack(
+            $"{outputFolder}/SeqFlatFileImport.exe",
+            $"{inputFolder}/SeqFlatFileImport.exe",
+            IO.Directory.EnumerateFiles(inputFolder, "*.dll").Select(f => (FilePath) f),
+            new ILRepackSettings { 
+                Internalize = true, 
+                Libs = new List<FilePath>() { inputFolder }
+            }
+        );
+    });
+
+Task("__Zip")
+    .IsDependentOn("__Merge")
+    .Does(() => {
+        Zip($"{artifactsDir}/SeqFlatFileImport.exe", $"{artifactsDir}/SeqFlatFileImport.zip");
+    });
+
+
 
 
 //////////////////////////////////////////////////////////////////////
@@ -126,9 +166,10 @@ private void RestoreFileOnCleanup(string file)
 // TASKS
 //////////////////////////////////////////////////////////////////////
 Task("Default")
-    .IsDependentOn("__Test");
+    .IsDependentOn("__Zip");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
 //////////////////////////////////////////////////////////////////////
 RunTarget(target);
+

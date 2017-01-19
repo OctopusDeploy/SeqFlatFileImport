@@ -23,6 +23,7 @@
     }
   },
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "outputName": "SeqFlatFileImport"
   }
 }

@@ -15,3 +15,9 @@ Features:
 ## Example
 
 `SeqFlatFileImport.exe OctopusServer.txt OctopusServer.0.txt --batch MyDebuggingTask`
+
+`SeqFlatFileImport.exe c:\logs --batch MyDebuggingTask`
+
+## Getting Started
+1. Run `build.cmd`
+2. The `artifacts` directory will now contain the standalone exe and a zip thereof
