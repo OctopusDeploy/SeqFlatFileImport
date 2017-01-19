@@ -101,7 +101,7 @@
   },
   {
     "Timestamp": "2016-05-30T08:49:46.498+10:00",
-    "Level": "Verboase",
+    "Level": "Debug",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
       "LineNumber": 21,

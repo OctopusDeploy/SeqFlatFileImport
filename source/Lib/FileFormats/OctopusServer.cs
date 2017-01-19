@@ -168,7 +168,9 @@ namespace SeqFlatFileImport.FileFormats
                 case "WARN":
                     return "Warning";
                 case "DEBUG":
-                    return "Verboase";
+                    return "Debug";
+                case "TRACE":
+                    return "Verbose";
                 default:
                     return "Information";
             }
