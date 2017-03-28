@@ -24,7 +24,7 @@ System.Net.HttpListenerException (0x80004005): The semaphore timeout period has 
 2016-05-30 08:49:46.6856   2413  INFO  poll://b2yf9fvn5hggm5hvjz72/   2413  Request IScriptService::GetStatus[177] / 25f849d3-fc86-476c-ba02-de8eeb3566dc was collected by the polling endpoint
 2016-05-30 08:49:46.7949   2424  INFO  listen://[::]:10943/           2424  Accepted TCP client: [::ffff:40.68.217.115]:1215
 2016-05-30 12:09:20.3683    412  INFO  Reader took 406ms (362ms until the first record) in transaction: SELECT * FROM dbo.[Dashboard] ORDER BY Id
-2016-05-30 12:09:20.4621     38  INFO  Request took 1320ms: POST http://octopus.veinteractive.com/api/users/login
+2016-05-30 12:09:20.4621     38  INFO  Request took 1320ms: POST http://demo.octopus.com/api/users/login
 2016-05-30 12:09:22.8216    530  INFO  listen://[::]:10943/            530  A client at [::ffff:40.68.217.115]:1198 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '5A53F4E04DE1216DFCAD66735FD04120DB70C74D' which is not in the list of thumbprints that we trust
-2017-03-24 14:00:35.1051    147 TRACE  GET   http://octopus.fcsamerica.com/api/
+2017-03-24 14:00:35.1051    147 TRACE  GET   http://demo.octopus.com/api/
 2017-03-24 14:00:35.1211    275 DEBUG  Reader took 1ms (1ms until the first record) in transaction 'ConfigurationStore': SELECT TOP 1 * FROM dbo.[ExtensionConfiguration] WHERE ([Id] = @id) ORDER BY [Id]

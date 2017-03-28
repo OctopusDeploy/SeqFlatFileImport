@@ -184,7 +184,7 @@
       "Thread": "38",
       "Time": 1320,
       "Method": "POST",
-      "Query": "http://octopus.veinteractive.com/api/users/login"
+      "Query": "http://demo.octopus.com/api/users/login"
     },
     "Exception": null
   },
@@ -204,7 +204,7 @@
   {
     "Timestamp": "2017-03-24T14:00:35.1051+10:00",
     "Level": "Verbose",
-    "MessageTemplate": "GET   http://octopus.fcsamerica.com/api/",
+    "MessageTemplate": "GET   http://demo.octopus.com/api/",
     "Properties": {
       "LineNumber": 29,
       "Thread": "147"
