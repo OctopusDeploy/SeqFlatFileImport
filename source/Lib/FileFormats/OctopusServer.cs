@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using System.Xml.Schema;
 
 namespace SeqFlatFileImport.FileFormats
 {
@@ -12,56 +9,56 @@ namespace SeqFlatFileImport.FileFormats
     {
         private static readonly Regex LineRegex = new Regex(@"^([0-9\-]{10} [0-9\:\.]{13}) +([0-9]+) +([A-Z]+) +(.+)$");
         private static readonly Regex ExceptionRegex = new Regex(@"Exception \(0x[0-9]+\):");
-
-        private static readonly TemplateRegex[] TemplateRegexes = new[]
+        private static readonly RegexOptions DefaultOptions = RegexOptions.Singleline;
+        private static readonly TemplateRegex[] TemplateRegexes =
         {
             new TemplateRegex(
                 new Regex(
-                    @"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)$"),
+                    @"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)", DefaultOptions),
                 "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
                 ),
             new TemplateRegex(
-                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+) (?<Query>.*)$"),
+                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+) (?<Query>.*)", DefaultOptions),
                 "Request took {Time}ms: {Method} {Query}"
                 ),
             new TemplateRegex(
-                new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)$"),
+                new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
                 "{Operation} took {Time}ms: {Query}"
                 ),
             new TemplateRegex(
-                new Regex(@"^Unhandled exception from web server: (?<Message>.*)$"),
+                new Regex(@"^Unhandled exception from web server: (?<Message>.*)", DefaultOptions),
                 "Unhandled exception from web server:  {Message}"
                 ),
             new TemplateRegex(
-                new Regex(@"^listen://(?<IP>.+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)$"),
+                new Regex(@"^listen://(?<IP>.+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "listen://{IP}:{Port}/ {Message}"
                 ),
             new TemplateRegex(
-                new Regex(@"^poll://(?<Id>[a-z0-9]+)/ +[0-9]+ +(?<Message>.*)$"),
+                new Regex(@"^poll://(?<Id>[a-z0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "poll://{Id}/ {Message}"
                 ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Retry attempt (?<n>[0-9]+)$"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Retry attempt (?<n>[0-9]+)", DefaultOptions),
                 "https://{Host}:{Port}/ Retry attempt {n}"
                 ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Opening a new connection$"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Opening a new connection$", DefaultOptions),
                 "https://{Host}:{Port}/ Opening a new connection"
                 ),
               new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ + Performing TLS handshake$"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ + Performing TLS handshake$", DefaultOptions),
                 "https://{Host}:{Port}/ Performing TLS handshake"
                 ),
              new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Secure connection established. Server at (?<Endpoint>[^ ]+) identified by thumbprint: (?<Thumbprint>[A-Z0-9]+), using protocol (?<Protocol>[A-Za-z0-9]+)"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Secure connection established. Server at (?<Endpoint>[^ ]+) identified by thumbprint: (?<Thumbprint>[A-Z0-9]+), using protocol (?<Protocol>[A-Za-z0-9]+)", DefaultOptions),
                 "https://{Host}:{Port}/ Secure connection established. Server at {Endpoint} identified by thumbprint: {Thumbprint}, using protocol {Protocol}"
                 ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +No connection could be made because the target machine actively refused it (?<Endpoint>.+)$"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +No connection could be made because the target machine actively refused it (?<Endpoint>.+)$", DefaultOptions),
                 "https://{Host}:{Port}/ No connection could be made because the target machine actively refused it {Endpoint}"
                 ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)$"),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "https://{Host}:{Port}/ {Message}"
                 )
         };
@@ -77,60 +74,67 @@ namespace SeqFlatFileImport.FileFormats
 
         public IEnumerable<RawEvent> Read(IEnumerable<string> lines)
         {
-            RawEvent currentEvent = null;
-            var inException = false;
             var lineNumber = 0;
+            Match currentLogEntryMatch = null;
+            var currentLogEntryStartingLineNumber = lineNumber;
+            var buffer = new List<string>();
 
             foreach (var line in lines)
             {
                 lineNumber++;
-                var match = LineRegex.Match(line);
-                if (match.Success)
+                var newLogEntryMatch = LineRegex.Match(line);
+                if (newLogEntryMatch.Success)
                 {
-                    inException = false;
-                    if (currentEvent != null)
-                        yield return currentEvent;
+                    if (currentLogEntryMatch != null)
+                    {
+                        yield return ProcessLogMessage(currentLogEntryStartingLineNumber, currentLogEntryMatch, buffer);
+                        buffer.Clear();
+                    }
 
-                    currentEvent = CreateEventFromMatch(lineNumber, match);
-                }
-                else if (currentEvent != null)
-                {
-                    if (inException || ExceptionRegex.IsMatch(line))
-                    {
-                        currentEvent.Exception += line;
-                        inException = true;
-                    }
-                    else
-                    {
-                        currentEvent.MessageTemplate += "\r\n" + line;
-                    }
+                    currentLogEntryMatch = newLogEntryMatch;
+                    currentLogEntryStartingLineNumber = lineNumber;
                 }
                 else
                 {
-                    yield return UnexpectedLine(lineNumber, line);
+                    buffer.Add(line);
                 }
             }
-            if (currentEvent != null)
-                yield return currentEvent;
+
+            // Flush the final entry
+            if (currentLogEntryMatch != null)
+            {
+                yield return ProcessLogMessage(currentLogEntryStartingLineNumber, currentLogEntryMatch, buffer);
+                buffer.Clear();
+            }
         }
 
-        private static RawEvent CreateEventFromMatch(int lineNumber, Match match)
+        private static RawEvent ProcessLogMessage(int lineNumber, Match currentLogEntryMatch, IReadOnlyCollection<string> lines)
         {
-            var properties = new Dictionary<string, object>()
+            var properties = new Dictionary<string, object>
             {
                 {"LineNumber", lineNumber },
-                {"Thread", match.Groups[2].Value}
+                {"Thread", currentLogEntryMatch.Groups[2].Value}
             };
 
-            var messageTemplate = MagicUpTheMessageTemplate(match.Groups[4].Value, properties);
+            var messageLines = new [] { currentLogEntryMatch.Groups[4].Value }.Concat(lines.TakeWhile(line => !ExceptionRegex.Match(line).Success)).ToArray();
+            var message = string.Join(Environment.NewLine, messageLines);
+            var messageTemplate = MagicUpTheMessageTemplate(message, properties);
 
-            return new RawEvent
+            var rawEvent = new RawEvent
             {
-                Timestamp = DateTimeOffset.Parse(match.Groups[1].Value),
-                Level = ConvertLevel(match.Groups[3].Value),
+                Timestamp = DateTimeOffset.Parse(currentLogEntryMatch.Groups[1].Value),
+                Level = ConvertLevel(currentLogEntryMatch.Groups[3].Value),
                 Properties = properties,
                 MessageTemplate = messageTemplate
             };
+
+            var exceptionLines = lines.Except(messageLines).ToArray();
+            if (exceptionLines.Any())
+            {
+                rawEvent.Exception = string.Join(Environment.NewLine, exceptionLines);
+            }
+
+            return rawEvent;
         }
 
         private static string MagicUpTheMessageTemplate(string message, Dictionary<string, object> properties)
@@ -175,22 +179,6 @@ namespace SeqFlatFileImport.FileFormats
                     return "Information";
             }
         }
-
-        private static RawEvent UnexpectedLine(int lineNumber, string line)
-        {
-            return new RawEvent()
-            {
-                Timestamp = DateTimeOffset.Now,
-                Level = "Warning",
-                MessageTemplate = "Unexpected line while parsing log {LineNumber}: {Line}",
-                Properties = new Dictionary<string, object>()
-                {
-                    {"LineNumber", lineNumber},
-                    {"Line", line}
-                }
-            };
-        }
-
 
         class TemplateRegex
         {

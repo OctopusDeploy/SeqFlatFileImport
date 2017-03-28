@@ -22,7 +22,7 @@
       "Thread": "2283",
       "Message": "The semaphore timeout period has expired"
     },
-    "Exception": "System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)   at System.IO.Stream.Close()   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)   at System.IO.Stream.Close()   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\Infrastructure\\NancyCompression.cs:line 100   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 350   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 338   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 0"
+    "Exception": "System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired\r\n   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)\r\n   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)\r\n   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)\r\n   at System.IO.Stream.Close()\r\n   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)\r\n   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\Infrastructure\\NancyCompression.cs:line 100\r\n   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 350\r\n   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 338\r\n   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)\r\n   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 0"
   },
   {
     "Timestamp": "2016-05-30T08:49:46.0918+10:00",
@@ -222,6 +222,20 @@
       "FirstRecord": 1,
       "Transaction": "ConfigurationStore",
       "Query": "SELECT TOP 1 * FROM dbo.[ExtensionConfiguration] WHERE ([Id] = @id) ORDER BY [Id]"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:35.1371+10:00",
+    "Level": "Debug",
+    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 31,
+      "Thread": "161",
+      "Time": 1,
+      "FirstRecord": 1,
+      "Transaction": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-1012&name=Deploy 6e59b6beced048b4a27bcf1089461cad",
+      "Query": "SELECT *\r\nFROM (SELECT ALIAS_ServerTask_0.*, Row_Number() over (ORDER BY ALIAS_ServerTask_0.[QueueTime] DESC, ALIAS_ServerTask_0.[Id] DESC) as RowNum FROM (SELECT * FROM dbo.[ServerTask] WHERE ([State] in ('Executing','Cancelling', 'Queued')) AND ([Name] = @taskname) AND ([EnvironmentId] = @environmentid) AND ([ProjectId] = @projectid)) ALIAS_ServerTask_0) RS\r\nWHERE RowNum >= @_minrow And RowNum <= @_maxrow\r\nORDER BY RowNum"
     },
     "Exception": null
   }
