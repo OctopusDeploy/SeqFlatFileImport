@@ -13,13 +13,16 @@ namespace SeqFlatFileImport.FileFormats
         private static readonly TemplateRegex[] TemplateRegexes =
         {
             new TemplateRegex(
-                new Regex(
-                    @"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)", DefaultOptions),
+                new Regex(@"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)", DefaultOptions),
                 "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
                 ),
             new TemplateRegex(
-                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+) (?<Query>.*)", DefaultOptions),
-                "Request took {Time}ms: {Method} {Query}"
+                new Regex(@"^(?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
+                "{Method} {Url} {CorrelationId}"
+                ),
+            new TemplateRegex(
+                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
+                "Request took {Time}ms: {Method} {Url} {CorrelationId}"
                 ),
             new TemplateRegex(
                 new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
@@ -85,12 +88,14 @@ namespace SeqFlatFileImport.FileFormats
                 var newLogEntryMatch = LineRegex.Match(line);
                 if (newLogEntryMatch.Success)
                 {
+                    // Flush the existing entry (maybe we don't have one yet?)
                     if (currentLogEntryMatch != null)
                     {
                         yield return ProcessLogMessage(currentLogEntryStartingLineNumber, currentLogEntryMatch, buffer);
                         buffer.Clear();
                     }
 
+                    // Start accumulating the new log entry
                     currentLogEntryMatch = newLogEntryMatch;
                     currentLogEntryStartingLineNumber = lineNumber;
                 }

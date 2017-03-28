@@ -178,13 +178,14 @@
   {
     "Timestamp": "2016-05-30T12:09:20.4621+10:00",
     "Level": "Information",
-    "MessageTemplate": "Request took {Time}ms: {Method} {Query}",
+    "MessageTemplate": "Request took {Time}ms: {Method} {Url} {CorrelationId}",
     "Properties": {
       "LineNumber": 27,
       "Thread": "38",
       "Time": 1320,
       "Method": "POST",
-      "Query": "http://demo.octopus.com/api/users/login"
+      "Url": "http://demo.octopus.com/api/users/login",
+      "CorrelationId": "beb82d8faa3843d0beead27d4ed7ef4e"
     },
     "Exception": null
   },
@@ -204,10 +205,13 @@
   {
     "Timestamp": "2017-03-24T14:00:35.1051+10:00",
     "Level": "Verbose",
-    "MessageTemplate": "GET   http://demo.octopus.com/api/",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
     "Properties": {
       "LineNumber": 29,
-      "Thread": "147"
+      "Thread": "147",
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/",
+      "CorrelationId": ""
     },
     "Exception": null
   },
@@ -236,6 +240,33 @@
       "FirstRecord": 1,
       "Transaction": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-1012&name=Deploy 6e59b6beced048b4a27bcf1089461cad",
       "Query": "SELECT *\r\nFROM (SELECT ALIAS_ServerTask_0.*, Row_Number() over (ORDER BY ALIAS_ServerTask_0.[QueueTime] DESC, ALIAS_ServerTask_0.[Id] DESC) as RowNum FROM (SELECT * FROM dbo.[ServerTask] WHERE ([State] in ('Executing','Cancelling', 'Queued')) AND ([Name] = @taskname) AND ([EnvironmentId] = @environmentid) AND ([ProjectId] = @projectid)) ALIAS_ServerTask_0) RS\r\nWHERE RowNum >= @_minrow And RowNum <= @_maxrow\r\nORDER BY RowNum"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9811+10:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 35,
+      "Thread": "161",
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-805&name=Deploy",
+      "CorrelationId": "beb82d8faa3843d0beead27d4ed7ef4e"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9811+10:00",
+    "Level": "Debug",
+    "MessageTemplate": "Request took {Time}ms: {Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 36,
+      "Thread": "275",
+      "Time": 59,
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-1&project=Projects-804&name=Deploy",
+      "CorrelationId": "38f1b92930a84c31a7aa0e1068887a12"
     },
     "Exception": null
   }
