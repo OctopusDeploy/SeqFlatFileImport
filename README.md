@@ -21,3 +21,4 @@ Features:
 ## Getting Started
 1. Run `build.cmd`
 2. The `artifacts` directory will now contain the standalone exe and a zip thereof
+3. Use `.\scripts\reset-seq.cmd` for a quick way to clean out and reset your local Seq instance
