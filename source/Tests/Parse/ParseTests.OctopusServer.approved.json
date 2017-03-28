@@ -203,24 +203,11 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:35.1051+10:00",
-    "Level": "Verbose",
-    "MessageTemplate": "{Method} {Url} {CorrelationId}",
-    "Properties": {
-      "LineNumber": 29,
-      "Thread": "147",
-      "Method": "GET",
-      "Url": "http://demo.octopus.com/api/",
-      "CorrelationId": ""
-    },
-    "Exception": null
-  },
-  {
     "Timestamp": "2017-03-24T14:00:35.1211+10:00",
     "Level": "Debug",
     "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
-      "LineNumber": 30,
+      "LineNumber": 29,
       "Thread": "275",
       "Time": 1,
       "FirstRecord": 1,
@@ -234,7 +221,7 @@
     "Level": "Debug",
     "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
-      "LineNumber": 31,
+      "LineNumber": 30,
       "Thread": "161",
       "Time": 1,
       "FirstRecord": 1,
@@ -248,7 +235,7 @@
     "Level": "Verbose",
     "MessageTemplate": "{Method} {Url} {CorrelationId}",
     "Properties": {
-      "LineNumber": 35,
+      "LineNumber": 34,
       "Thread": "161",
       "Method": "GET",
       "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-805&name=Deploy",
@@ -261,12 +248,38 @@
     "Level": "Debug",
     "MessageTemplate": "Request took {Time}ms: {Method} {Url} {CorrelationId}",
     "Properties": {
-      "LineNumber": 36,
+      "LineNumber": 35,
       "Thread": "275",
       "Time": 59,
       "Method": "GET",
       "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-1&project=Projects-804&name=Deploy",
       "CorrelationId": "38f1b92930a84c31a7aa0e1068887a12"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9961+10:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 36,
+      "Thread": "275",
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-667&name=Deploy",
+      "CorrelationId": "a89ccbcc4f794ed19ef6846e9a125d3b"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:13:28.5627+10:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 37,
+      "Thread": "96",
+      "Method": "GET",
+      "Url": "http://octopus/api/dashboard",
+      "CorrelationId": "fb4338ce8da348c7b8e4c297cf7704df"
     },
     "Exception": null
   }
