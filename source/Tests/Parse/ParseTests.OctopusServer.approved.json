@@ -2,12 +2,13 @@
   {
     "Timestamp": "2016-05-30T00:00:00.1811+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record): {Query}",
+    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 1,
       "Thread": "2749",
       "Time": 353,
       "FirstRecord": 319,
+      "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
     },
     "Exception": null
@@ -50,12 +51,13 @@
   {
     "Timestamp": "2016-05-30T08:49:46.1074+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record): {Query}",
+    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 17,
       "Thread": "1716",
       "Time": 332,
       "FirstRecord": 332,
+      "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] WHERE (ProjectId = @projectId) ORDER BY Id"
     },
     "Exception": null
@@ -63,12 +65,13 @@
   {
     "Timestamp": "2016-05-30T08:49:46.2636+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record): {Query}",
+    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 18,
       "Thread": "2426",
       "Time": 435,
       "FirstRecord": 279,
+      "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
     },
     "Exception": null
@@ -165,13 +168,10 @@
   {
     "Timestamp": "2016-05-30T12:09:20.3683+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record): {Query}",
+    "MessageTemplate": "Reader took 406ms (362ms until the first record) in transaction: SELECT * FROM dbo.[Dashboard] ORDER BY Id",
     "Properties": {
       "LineNumber": 26,
-      "Thread": "412",
-      "Time": 406,
-      "FirstRecord": 362,
-      "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
+      "Thread": "412"
     },
     "Exception": null
   },
@@ -198,6 +198,30 @@
       "IP": "[::]",
       "Port": 10943,
       "Message": "A client at [::ffff:40.68.217.115]:1198 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '5A53F4E04DE1216DFCAD66735FD04120DB70C74D' which is not in the list of thumbprints that we trust"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:35.1051+10:00",
+    "Level": "Verbose",
+    "MessageTemplate": "GET   http://octopus.fcsamerica.com/api/",
+    "Properties": {
+      "LineNumber": 29,
+      "Thread": "147"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:35.1211+10:00",
+    "Level": "Debug",
+    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 30,
+      "Thread": "275",
+      "Time": 1,
+      "FirstRecord": 1,
+      "Transaction": "ConfigurationStore",
+      "Query": "SELECT TOP 1 * FROM dbo.[ExtensionConfiguration] WHERE ([Id] = @id) ORDER BY [Id]"
     },
     "Exception": null
   }

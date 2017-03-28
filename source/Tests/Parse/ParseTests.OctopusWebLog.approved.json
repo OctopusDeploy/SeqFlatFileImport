@@ -1,473 +1,337 @@
 ﻿[
   {
-    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Timestamp": "2017-03-28T03:49:55+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:55",
+      "date": "2017-03-28",
+      "time": "03:49:55",
       "cs_method": "GET",
       "cs_uri_stem": "/api",
-      "s_port": "80",
-      "cs_username": "admin",
+      "s_port": "8065",
+      "cs_username": "-",
       "c_ip": "::1",
       "sc_status": "200",
-      "time_taken": "659"
+      "time_taken": "513"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:58:55+00:00",
+    "Timestamp": "2017-03-28T03:49:55+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:55",
+      "date": "2017-03-28",
+      "time": "03:49:55",
       "cs_method": "GET",
       "cs_uri_stem": "/api/users/me",
-      "s_port": "80",
-      "cs_username": "admin",
+      "s_port": "8065",
+      "cs_username": "-",
       "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "80"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:55+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:55",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/users/Users-1/permissions",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "83"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:55+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:55",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/featuresconfiguration",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "51"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/serverstatus",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "120"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/serverstatus",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "90"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/dashboard",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "262"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/dashboard",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "33"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-61/logo",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "304",
-      "time_taken": "81"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-41/logo",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "304",
+      "sc_status": "401",
       "time_taken": "103"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Timestamp": "2017-03-28T03:49:56+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
+      "date": "2017-03-28",
+      "time": "03:49:56",
       "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-81/logo",
-      "s_port": "80",
-      "cs_username": "admin",
+      "cs_uri_stem": "/api/featuresconfiguration",
+      "s_port": "8065",
+      "cs_username": "-",
       "c_ip": "::1",
-      "sc_status": "304",
-      "time_taken": "116"
+      "sc_status": "401",
+      "time_taken": "139"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
+    "Timestamp": "2017-03-28T03:49:56+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-1/logo",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "304",
-      "time_taken": "88"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:56+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:56",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-21/logo",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "304",
-      "time_taken": "196"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:57+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:57",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/dashboard",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "37"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:58+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:58",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/double-test",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "79"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:58+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:58",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tagsets/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "75"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:58+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:58",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-81/logo",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "60"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:58+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:58",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/deploymentprocesses/deploymentprocess-Projects-81",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "113"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:58+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:58",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tagsets/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "118"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-81/triggers",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "154"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tenants/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "166"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-81/releases",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "175"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tenants/variables-missing",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "195"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/progression/Projects-81",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "194"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:58:59+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:58:59",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/Projects-81/channels",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "74"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:00+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:00",
+      "date": "2017-03-28",
+      "time": "03:49:56",
       "cs_method": "GET",
       "cs_uri_stem": "/api/serverstatus",
-      "s_port": "80",
-      "cs_username": "admin",
+      "s_port": "8065",
+      "cs_username": "-",
       "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "46"
+      "sc_status": "401",
+      "time_taken": "204"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Timestamp": "2017-03-28T03:49:56+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:00",
+      "date": "2017-03-28",
+      "time": "03:49:56",
       "cs_method": "GET",
-      "cs_uri_stem": "/api/packages",
-      "s_port": "80",
-      "cs_username": "admin",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "8065",
+      "cs_username": "-",
       "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "108"
+      "sc_status": "401",
+      "time_taken": "199"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Timestamp": "2017-03-28T03:49:57+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:00",
+      "date": "2017-03-28",
+      "time": "03:49:57",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "-",
+      "c_ip": "::1",
+      "sc_status": "401",
+      "time_taken": "86"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:04+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:04",
+      "cs_method": "POST",
+      "cs_uri_stem": "/api/users/login",
+      "s_port": "8065",
+      "cs_username": "-",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "384"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:04+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:04",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/users/Users-1/permissions",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "364"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:05",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/featuresconfiguration",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "136"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:05",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "553"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:06",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/projects/Projects-1/logo",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "304",
+      "time_taken": "424"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:07+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:07",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "42"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:08",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/featuresconfiguration",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "39"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:08",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/repository/configuration",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "48"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:08",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "39"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:08",
       "cs_method": "GET",
       "cs_uri_stem": "/api/serverstatus/nuget",
-      "s_port": "80",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "293"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:08",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/packages",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "534"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:10+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:10",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/tasks",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "1327"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:10+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:10",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/machines/all",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "318"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:50:10+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:50:10",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/environments/all",
+      "s_port": "8065",
       "cs_username": "admin",
       "c_ip": "::1",
       "sc_status": "200",
@@ -476,155 +340,138 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-01-18T03:59:00+00:00",
+    "Timestamp": "2017-03-28T03:50:17+00:00",
     "Level": "Information",
     "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
     "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:00",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/repository/configuration",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "54"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:01+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:01",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/projects/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "84"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:01+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:01",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/octopusservernodes/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "113"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:01+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:01",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/environments/all",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "113"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:01+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:01",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tasks",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "185"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:01+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:01",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tasks",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "50"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:05+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:05",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tasks",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "120"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:05+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:05",
-      "cs_method": "GET",
-      "cs_uri_stem": "/api/tasks",
-      "s_port": "80",
-      "cs_username": "admin",
-      "c_ip": "::1",
-      "sc_status": "200",
-      "time_taken": "98"
-    },
-    "Exception": null
-  },
-  {
-    "Timestamp": "2017-01-18T03:59:06+00:00",
-    "Level": "Information",
-    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
-    "Properties": {
-      "date": "2017-01-18",
-      "time": "03:59:06",
+      "date": "2017-03-28",
+      "time": "03:50:17",
       "cs_method": "GET",
       "cs_uri_stem": "/api/serverstatus",
-      "s_port": "80",
+      "s_port": "8065",
       "cs_username": "admin",
       "c_ip": "::1",
       "sc_status": "200",
-      "time_taken": "53"
+      "time_taken": "25"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:50:31+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:50:31",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "2915"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:50:42+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:50:42",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "515"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:50:52+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:50:52",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:50:57+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:50:57",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/dashboard",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "33"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:51:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:51:02",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T13:51:12+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "13:51:12",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-28T03:51:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "{cs_method} {time_taken} {sc_status} {cs_uri_stem} {cs_username} {c_ip}",
+    "Properties": {
+      "date": "2017-03-28",
+      "time": "03:51:22",
+      "cs_method": "GET",
+      "cs_uri_stem": "/api/serverstatus",
+      "s_port": "8065",
+      "cs_username": "admin",
+      "c_ip": "::1",
+      "sc_status": "200",
+      "time_taken": "23"
     },
     "Exception": null
   }

@@ -1,8 +1,5 @@
-using System.IO;
 using System.Runtime.CompilerServices;
 using Assent;
-using Assent.Namers;
-using Newtonsoft.Json;
 using NUnit.Framework;
 using SeqFlatFileImport.Tests.Helpers;
 
@@ -19,14 +16,14 @@ namespace SeqFlatFileImport.Tests.Parse
         [Test]
         public void OctopusWebLog()
         {
-            Execute("Web-2017-01-18.log");
+            Execute("Web-2017-03-28.log");
         }
 
 
         [Test]
         public void Iis()
         {
-            Execute("u_ex170117.log");
+            Execute("u_ex150708.log");
         }
 
         [Test]
