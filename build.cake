@@ -1,9 +1,9 @@
 //////////////////////////////////////////////////////////////////////
 // TOOLS
 //////////////////////////////////////////////////////////////////////
-#tool "nuget:?package=GitVersion.CommandLine&version=3.6.4"
+#tool "nuget:?package=GitVersion.CommandLine&version=4.0.0-beta0007"
 #tool "nuget:?package=ILRepack&version=2.0.11"
-#addin "MagicChunks"
+#addin "Cake.FileHelpers"
 
 using Path = System.IO.Path;
 using IO = System.IO;
@@ -17,35 +17,34 @@ var configuration = Argument("configuration", "Release");
 ///////////////////////////////////////////////////////////////////////////////
 // GLOBAL VARIABLES
 ///////////////////////////////////////////////////////////////////////////////
+var artifactsDir = "./artifacts/";
 var publishDir = "./publish";
-var artifactsDir = "./artifacts";
-var cleanups = new List<Action>();
-var isContinuousIntegrationBuild = !BuildSystem.IsLocalBuild;
+var localPackagesDir = "../LocalPackages";
 
-var gitVersionInfo = GitVersion(new GitVersionSettings {
-    OutputType = GitVersionOutput.Json
-});
+GitVersion gitVersionInfo;
+string nugetVersion;
 
-var nugetVersion = gitVersionInfo.NuGetVersion;
 
 ///////////////////////////////////////////////////////////////////////////////
 // SETUP / TEARDOWN
 ///////////////////////////////////////////////////////////////////////////////
 Setup(context =>
 {
-    Information("Building SeqFlatFileImport v{0}", nugetVersion);
-     if(BuildSystem.IsRunningOnTeamCity)
+    gitVersionInfo = GitVersion(new GitVersionSettings {
+        OutputType = GitVersionOutput.Json
+    });
+
+    if(BuildSystem.IsRunningOnTeamCity)
         BuildSystem.TeamCity.SetBuildNumber(gitVersionInfo.NuGetVersion);
-    if(BuildSystem.IsRunningOnAppVeyor)
-        AppVeyor.UpdateBuildVersion(gitVersionInfo.NuGetVersion);
+
+    nugetVersion = gitVersionInfo.NuGetVersion;
+
+    Information("Building SeqFlatFileImport v{0}", nugetVersion);
+    Information("Informational Version {0}", gitVersionInfo.InformationalVersion);
 });
 
 Teardown(context =>
 {
-    Information("Cleaning up");
-    foreach(var item in cleanups)
-        item();
-
     Information("Finished running tasks.");
 });
 
@@ -53,64 +52,49 @@ Teardown(context =>
 //  PRIVATE TASKS
 //////////////////////////////////////////////////////////////////////
 
-Task("__Clean")
+Task("Clean")
     .Does(() =>
 {
     CleanDirectory(artifactsDir);
     CleanDirectory(publishDir);
     CleanDirectories("./source/**/bin");
     CleanDirectories("./source/**/obj");
+    CleanDirectories("./source/**/TestResults");
 });
 
-Task("__Restore")
-    .Does(() => DotNetCoreRestore());
+Task("Restore")
+    .IsDependentOn("Clean")
+    .Does(() => {
+        DotNetCoreRestore("source");
+    });
 
-Task("__UpdateProjectJsonVersion")
+
+Task("Build")
+    .IsDependentOn("Restore")
+    .IsDependentOn("Clean")
     .Does(() =>
 {
-    var files = GetFiles("./source/**/project.json");
-    foreach(var file in files)
-    {   
-        var projectJson = file.FullPath;
-        RestoreFileOnCleanup(projectJson);
-        Information("Updating {0} version -> {1}", projectJson, nugetVersion);
-
-        TransformConfig(projectJson, projectJson, new TransformationCollection {
-            { "version", nugetVersion }
-        });
-    }
-});
-
-Task("__Build")
-    .IsDependentOn("__Clean")
-    .IsDependentOn("__Restore")
-    .IsDependentOn("__UpdateProjectJsonVersion")
-    .Does(() =>
-{
-    DotNetCoreBuild("**/project.json", new DotNetCoreBuildSettings
+    DotNetCoreBuild("./source", new DotNetCoreBuildSettings
     {
-        Configuration = configuration
+        Configuration = configuration,
+        ArgumentCustomization = args => args.Append($"/p:Version={nugetVersion}")
     });
 });
 
-Task("__Test")
-    .IsDependentOn("__Build")
+Task("Test")
+    .IsDependentOn("Build")
     .Does(() =>
 {
-    GetFiles("source/*Tests/project.json")
-        .ToList()
-        .ForEach(testProjectFile => 
-        {
-            DotNetCoreTest(testProjectFile.ToString(), new DotNetCoreTestSettings
-            {
-                Configuration = configuration,
-                WorkingDirectory = Path.GetDirectoryName(testProjectFile.ToString())
-            });
-        });
+    DotNetCoreTest("./source/Tests/Tests.csproj", new DotNetCoreTestSettings
+    {
+        Configuration = configuration,
+        NoBuild = true,
+        ArgumentCustomization = args => args.Append("-l trx")
+    });
 });
 
-Task("__DotnetPublish")
-    .IsDependentOn("__Test")
+Task("DotnetPublish")
+    .IsDependentOn("Test")
     .Does(() =>
 {
     DotNetCorePublish("source/Console", new DotNetCorePublishSettings
@@ -120,8 +104,8 @@ Task("__DotnetPublish")
     });
 });
 
-Task("__Merge")
-    .IsDependentOn("__DotnetPublish")
+Task("Merge")
+    .IsDependentOn("DotnetPublish")
     .Does(() => {
         CreateDirectory(artifactsDir);
 
@@ -139,37 +123,16 @@ Task("__Merge")
         );
     });
 
-Task("__Zip")
-    .IsDependentOn("__Merge")
+Task("Zip")
+    .IsDependentOn("Merge")
     .Does(() => {
-        Zip($"{artifactsDir}/SeqFlatFileImport.exe", $"{artifactsDir}/SeqFlatFileImport.zip");
+        Zip($"{artifactsDir}", $"{artifactsDir}/SeqFlatFileImport.zip");
     });
 
-
-
-
-//////////////////////////////////////////////////////////////////////
-// HELPERS
-//////////////////////////////////////////////////////////////////////
-
-private void RestoreFileOnCleanup(string file)
-{
-    var contents = System.IO.File.ReadAllBytes(file);
-    cleanups.Add(() => {
-        Information("Restoring {0}", file);
-        System.IO.File.WriteAllBytes(file, contents);
-    });
-}
-
-
-//////////////////////////////////////////////////////////////////////
-// TASKS
-//////////////////////////////////////////////////////////////////////
 Task("Default")
-    .IsDependentOn("__Zip");
+    .IsDependentOn("Zip");
 
 //////////////////////////////////////////////////////////////////////
 // EXECUTION
 //////////////////////////////////////////////////////////////////////
 RunTarget(target);
-
