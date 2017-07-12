@@ -7,7 +7,15 @@ namespace SeqFlatFileImport.FileFormats
 {
     public class OctopusServer : IFileFormat
     {
-        private static readonly Regex LineRegex = new Regex(@"^([0-9\-]{10} [0-9\:\.]{13}) +([0-9]+) +([A-Z]+) +(.+)$");
+        /// <summary>
+        /// Octopus 3.x -> 3.15.x
+        /// </summary>
+        private static readonly Regex LineRegex_3_0 = new Regex(@"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
+
+        /// <summary>
+        /// We added PID in 3.15.x
+        /// </summary>
+        private static readonly Regex LineRegex_3_15 = new Regex(@"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<PID>[0-9]+) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
         private static readonly Regex ExceptionRegex = new Regex(@"Exception \(0x[0-9]+\):");
         private static readonly RegexOptions DefaultOptions = RegexOptions.Singleline;
         private static readonly TemplateRegex[] TemplateRegexes =
@@ -82,11 +90,13 @@ namespace SeqFlatFileImport.FileFormats
             var currentLogEntryStartingLineNumber = lineNumber;
             var buffer = new List<string>();
 
+            var lineRegex = new[] {LineRegex_3_0, LineRegex_3_15};
+
             foreach (var line in lines)
             {
                 lineNumber++;
-                var newLogEntryMatch = LineRegex.Match(line);
-                if (newLogEntryMatch.Success)
+                var newLogEntryMatch = lineRegex.Select(regex => regex.Match(line)).FirstOrDefault(match => match.Success);
+                if (newLogEntryMatch?.Success == true)
                 {
                     // Flush the existing entry (maybe we don't have one yet?)
                     if (currentLogEntryMatch != null)
@@ -118,17 +128,18 @@ namespace SeqFlatFileImport.FileFormats
             var properties = new Dictionary<string, object>
             {
                 {"LineNumber", lineNumber },
-                {"Thread", currentLogEntryMatch.Groups[2].Value}
+                {"PID", currentLogEntryMatch.Groups["PID"].Value},
+                {"Thread", currentLogEntryMatch.Groups["Thread"].Value}
             };
 
-            var messageLines = new [] { currentLogEntryMatch.Groups[4].Value }.Concat(lines.TakeWhile(line => !ExceptionRegex.Match(line).Success)).ToArray();
+            var messageLines = new [] { currentLogEntryMatch.Groups["Message"].Value }.Concat(lines.TakeWhile(line => !ExceptionRegex.Match(line).Success)).ToArray();
             var message = string.Join(Environment.NewLine, messageLines);
             var messageTemplate = MagicUpTheMessageTemplate(message, properties);
 
             var rawEvent = new RawEvent
             {
-                Timestamp = DateTimeOffset.Parse(currentLogEntryMatch.Groups[1].Value),
-                Level = ConvertLevel(currentLogEntryMatch.Groups[3].Value),
+                Timestamp = DateTimeOffset.Parse(currentLogEntryMatch.Groups["Timestamp"].Value),
+                Level = ConvertLevel(currentLogEntryMatch.Groups["Level"].Value),
                 Properties = properties,
                 MessageTemplate = messageTemplate
             };

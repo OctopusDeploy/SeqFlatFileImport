@@ -35,3 +35,22 @@ ORDER BY RowNum
 2017-03-24 14:00:34.9811    275 DEBUG  Request took 59ms: GET http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-1&project=Projects-804&name=Deploy 38f1b92930a84c31a7aa0e1068887a12
 2017-03-24 14:00:34.9961    275 TRACE  GET   http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-667&name=Deploy a89ccbcc4f794ed19ef6846e9a125d3b
 2017-03-24 14:13:28.5627     96 TRACE  GET   http://octopus/api/dashboard fb4338ce8da348c7b8e4c297cf7704df
+2017-07-12 11:57:43.3142  15048      1  INFO  Loading plugins from: c:\dev\OctopusDeploy\source\Octopus.Server\bin\net451\BuiltInExtensions
+2017-07-12 11:57:43.3273  15048      1  INFO  Loading BuiltIn extension: AzureAD (2.0.9.0)
+2017-07-12 11:57:43.3392  15048      1  INFO  Loading BuiltIn extension: Directory Services (2.0.13.0)
+2017-07-12 11:57:43.3392  15048      1  INFO  Loading BuiltIn extension: GoogleApps (2.0.9.0)
+2017-07-12 11:57:43.3611  15048      1  INFO  Loading BuiltIn extension: Guest (2.0.3.0)
+2017-07-12 11:57:43.3713  15048      1  INFO  Loading BuiltIn extension: UsernamePassword (2.0.5.0)
+2017-07-12 11:57:43.4352  15048      1  INFO  ==== HelpCommand ====
+2017-07-12 11:58:34.8992  35412      1  INFO  Octopus.Server.exe version 0.0.0-local (0.0.0-local) instance master
+2017-07-12 11:58:34.9262  35412      1  INFO  Environment Information:
+  OperatingSystem: Microsoft Windows NT 6.2.9200.0
+  OsBitVersion: x64
+  Is64BitProcess: True
+  CurrentUser: MICHAELNOON1449\michaelnoonan
+  MachineName: MICHAELNOON1449
+  ProcessorCount: 8
+  CurrentDirectory: c:\dev\OctopusDeploy
+  TempDirectory: C:\Users\michaelnoonan\AppData\Local\Temp\
+  HostProcessName: Octopus.Server
+  PID: 35412
