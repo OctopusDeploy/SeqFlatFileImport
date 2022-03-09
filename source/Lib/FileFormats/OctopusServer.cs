@@ -10,72 +10,94 @@ namespace SeqFlatFileImport.FileFormats
         /// <summary>
         /// Octopus 3.x -> 3.15.x
         /// </summary>
-        private static readonly Regex LineRegex_3_0 = new Regex(@"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
+        private static readonly Regex LineRegex_3_0 =
+            new Regex(
+                @"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
 
         /// <summary>
         /// We added PID in 3.15.x
         /// </summary>
-        private static readonly Regex LineRegex_3_15 = new Regex(@"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<PID>[0-9]+) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
+        private static readonly Regex LineRegex_3_15 =
+            new Regex(
+                @"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<PID>[0-9]+) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
+
         private static readonly Regex ExceptionRegex = new Regex(@"Exception \(0x[0-9]+\):");
         private static readonly RegexOptions DefaultOptions = RegexOptions.Singleline;
+
         private static readonly TemplateRegex[] TemplateRegexes =
         {
             new TemplateRegex(
-                new Regex(@"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)", DefaultOptions),
+                new Regex(
+                    @"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)",
+                    DefaultOptions),
                 "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^(?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
                 "{Method} {Url} {CorrelationId}"
-                ),
+            ),
             new TemplateRegex(
-                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
+                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)",
+                    DefaultOptions),
                 "Request took {Time}ms: {Method} {Url} {CorrelationId}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
                 "{Operation} took {Time}ms: {Query}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^Unhandled exception from web server: (?<Message>.*)", DefaultOptions),
                 "Unhandled exception from web server:  {Message}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^listen://(?<IP>.+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "listen://{IP}:{Port}/ {Message}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^poll://(?<Id>[a-z0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "poll://{Id}/ {Message}"
-                ),
+            ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Retry attempt (?<n>[0-9]+)", DefaultOptions),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Retry attempt (?<n>[0-9]+)",
+                    DefaultOptions),
                 "https://{Host}:{Port}/ Retry attempt {n}"
-                ),
+            ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Opening a new connection$", DefaultOptions),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Opening a new connection$",
+                    DefaultOptions),
                 "https://{Host}:{Port}/ Opening a new connection"
-                ),
-              new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ + Performing TLS handshake$", DefaultOptions),
-                "https://{Host}:{Port}/ Performing TLS handshake"
-                ),
-             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Secure connection established. Server at (?<Endpoint>[^ ]+) identified by thumbprint: (?<Thumbprint>[A-Z0-9]+), using protocol (?<Protocol>[A-Za-z0-9]+)", DefaultOptions),
-                "https://{Host}:{Port}/ Secure connection established. Server at {Endpoint} identified by thumbprint: {Thumbprint}, using protocol {Protocol}"
-                ),
+            ),
             new TemplateRegex(
-                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +No connection could be made because the target machine actively refused it (?<Endpoint>.+)$", DefaultOptions),
+                new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ + Performing TLS handshake$",
+                    DefaultOptions),
+                "https://{Host}:{Port}/ Performing TLS handshake"
+            ),
+            new TemplateRegex(
+                new Regex(
+                    @"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Secure connection established. Server at (?<Endpoint>[^ ]+) identified by thumbprint: (?<Thumbprint>[A-Z0-9]+), using protocol (?<Protocol>[A-Za-z0-9]+)",
+                    DefaultOptions),
+                "https://{Host}:{Port}/ Secure connection established. Server at {Endpoint} identified by thumbprint: {Thumbprint}, using protocol {Protocol}"
+            ),
+            new TemplateRegex(
+                new Regex(
+                    @"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +No connection could be made because the target machine actively refused it (?<Endpoint>.+)$",
+                    DefaultOptions),
                 "https://{Host}:{Port}/ No connection could be made because the target machine actively refused it {Endpoint}"
-                ),
+            ),
             new TemplateRegex(
                 new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "https://{Host}:{Port}/ {Message}"
-                )
+            ),
+            new TemplateRegex(
+                new Regex(
+                    @"""(?<Protocol>[A-Z]+)"" ""(?<Method>[A-Z]+)"" to ""(?<Url>.*)"" completed with (?<Code>[0-9]+) in .* \((?<Elapsed>[0-9]+.[0-9]+)ms\)",
+                    DefaultOptions),
+                "{Protocol} {Method} to {Url} completed with {Code} in {Elapsed}"
+            )
         };
 
         public string Name { get; } = "OctopusServer";
-        public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[] { @"OctopusServer.*\.txt" };
+        public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[] {@"OctopusServer.*\.txt"};
         public int Ordinal { get; } = 0;
 
         public bool AutodetectFromContents(string[] firstFewLines)
@@ -95,7 +117,8 @@ namespace SeqFlatFileImport.FileFormats
             foreach (var line in lines)
             {
                 lineNumber++;
-                var newLogEntryMatch = lineRegex.Select(regex => regex.Match(line)).FirstOrDefault(match => match.Success);
+                var newLogEntryMatch =
+                    lineRegex.Select(regex => regex.Match(line)).FirstOrDefault(match => match.Success);
                 if (newLogEntryMatch?.Success == true)
                 {
                     // Flush the existing entry (maybe we don't have one yet?)
@@ -123,16 +146,18 @@ namespace SeqFlatFileImport.FileFormats
             }
         }
 
-        private static RawEvent ProcessLogMessage(int lineNumber, Match currentLogEntryMatch, IReadOnlyCollection<string> lines)
+        private static RawEvent ProcessLogMessage(int lineNumber, Match currentLogEntryMatch,
+            IReadOnlyCollection<string> lines)
         {
             var properties = new Dictionary<string, object>
             {
-                {"LineNumber", lineNumber },
+                {"LineNumber", lineNumber},
                 {"PID", currentLogEntryMatch.Groups["PID"].Value},
                 {"Thread", currentLogEntryMatch.Groups["Thread"].Value}
             };
 
-            var messageLines = new [] { currentLogEntryMatch.Groups["Message"].Value }.Concat(lines.TakeWhile(line => !ExceptionRegex.Match(line).Success)).ToArray();
+            var messageLines = new[] {currentLogEntryMatch.Groups["Message"].Value}
+                .Concat(lines.TakeWhile(line => !ExceptionRegex.Match(line).Success)).ToArray();
             var message = string.Join(Environment.NewLine, messageLines);
             var messageTemplate = MagicUpTheMessageTemplate(message, properties);
 
@@ -164,8 +189,10 @@ namespace SeqFlatFileImport.FileFormats
                     {
                         string strVal = match.Groups[name].Value;
                         int intVal;
-                        if(int.TryParse(strVal, out intVal))
+                        if (int.TryParse(strVal, out intVal))
                             properties[name] = intVal;
+                        if (float.TryParse(strVal, out var floatVal))
+                            properties[name] = floatVal;
                         else
                             properties[name] = strVal;
                     }
@@ -174,6 +201,7 @@ namespace SeqFlatFileImport.FileFormats
                     return tr.Template;
                 }
             }
+
             return message;
         }
 
