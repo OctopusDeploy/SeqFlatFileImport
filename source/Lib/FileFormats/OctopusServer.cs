@@ -28,22 +28,22 @@ namespace SeqFlatFileImport.FileFormats
         {
             new TemplateRegex(
                 new Regex(
-                    @"^Reader took (?<Time>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)",
+                    @"^Reader took (?<Elapsed>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)",
                     DefaultOptions),
-                "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
+                "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
             ),
             new TemplateRegex(
                 new Regex(@"^(?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
                 "{Method} {Url} {CorrelationId}"
             ),
             new TemplateRegex(
-                new Regex(@"^Request took (?<Time>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)",
+                new Regex(@"^Request took (?<Elapsed>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)",
                     DefaultOptions),
-                "Request took {Time}ms: {Method} {Url} {CorrelationId}"
+                "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}"
             ),
             new TemplateRegex(
-                new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Time>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
-                "{Operation} took {Time}ms: {Query}"
+                new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Elapsed>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
+                "{Operation} took {Elapsed}ms: {Query}"
             ),
             new TemplateRegex(
                 new Regex(@"^Unhandled exception from web server: (?<Message>.*)", DefaultOptions),
@@ -93,6 +93,12 @@ namespace SeqFlatFileImport.FileFormats
                     @"""(?<Protocol>[A-Z]+)"" ""(?<Method>[A-Z]+)"" to ""(?<Url>.*)"" completed with (?<Code>[0-9]+) in .* \((?<Elapsed>[0-9]+.[0-9]+)ms\)",
                     DefaultOptions),
                 "{Protocol} {Method} to {Url} completed with {Code} in {Elapsed}"
+            ),
+            new TemplateRegex(
+                new Regex(
+                    @"^Execute reader took (?<Elapsed>[0-9]+)ms in transaction '(?<Transaction>.*)': (?<Query>.*)",
+                    DefaultOptions),
+                "Execute reader took {Elapsed} in transaction {Transaction}: {Query}"
             )
         };
 
