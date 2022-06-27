@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <VersionPrefix>0.1.0</VersionPrefix>
-    <TargetFramework>net452</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AssemblyName>Lib</AssemblyName>
     <PackageId>Lib</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
