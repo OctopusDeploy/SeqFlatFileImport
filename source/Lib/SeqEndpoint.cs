@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Seq.Api;
 
 namespace SeqFlatFileImport
 {
@@ -52,9 +53,9 @@ namespace SeqFlatFileImport
             {
                 var json = JsonConvert.SerializeObject(new {Events = events});
                 var content = new StringContent(json, Encoding.UTF8, "application/json");
-                using (var client = new HttpClient())
+                using (var client = new SeqConnection(_uri.AbsoluteUri, _apiKey))
                 {
-                    var response = await client.PostAsync(_uri, content);
+                    var response = await client.Client.HttpClient.PostAsync(_uri, content);
                     if (response.IsSuccessStatusCode)
                         return Result.Success();
                     return Result.Failed(response.StatusCode + " " + response.ReasonPhrase);
@@ -81,6 +82,4 @@ namespace SeqFlatFileImport
             return Result.From(results);
         }
     }
-
-   
 }
