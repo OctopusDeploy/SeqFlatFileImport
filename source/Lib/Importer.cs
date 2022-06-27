@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using Seq.Api;
 using SeqFlatFileImport.FileFormats;
 
 namespace SeqFlatFileImport
