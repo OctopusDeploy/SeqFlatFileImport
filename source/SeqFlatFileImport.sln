@@ -2,11 +2,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Console", "Console\Console.csproj", "{15158A18-F180-4479-B23E-757B4338EE6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqFlatFileImport", "SeqFlatFileImport\SeqFlatFileImport.csproj", "{15158A18-F180-4479-B23E-757B4338EE6A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lib", "Lib\Lib.csproj", "{86DEC7E9-4AC0-4166-B251-5E667C939E6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqFlatFileImport.Core", "SeqFlatFileImport.Core\SeqFlatFileImport.Core.csproj", "{86DEC7E9-4AC0-4166-B251-5E667C939E6E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{9BC81AEF-B4EC-4B39-A96B-71E7075CB62A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeqFlatFileImport.Tests", "SeqFlatFileImport.Tests\SeqFlatFileImport.Tests.csproj", "{9BC81AEF-B4EC-4B39-A96B-71E7075CB62A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
