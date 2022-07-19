@@ -70,3 +70,4 @@ packages
 *.trx
 **/.idea
 /.idea/
+.DS_Store
