@@ -196,18 +196,19 @@ namespace SeqFlatFileImport.Core.FileFormats
                         string strVal = match.Groups[name].Value;
                         int intVal;
                         if (int.TryParse(strVal, out intVal))
+                        {                            
                             properties[name] = intVal;
+                            continue;
+                        }
+                       
                         if (float.TryParse(strVal, out var floatVal))
                             properties[name] = floatVal;
                         else
                             properties[name] = strVal;
                     }
-
-
                     return tr.Template;
                 }
             }
-
             return message;
         }
 

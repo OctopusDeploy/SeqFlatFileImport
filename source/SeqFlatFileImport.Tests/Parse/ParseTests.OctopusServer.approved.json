@@ -1,13 +1,13 @@
 ﻿[
   {
-    "Timestamp": "2016-05-30T00:00:00.1811+08:00",
+    "Timestamp": "2016-05-30T00:00:00.1811+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 1,
       "PID": "",
       "Thread": "2749",
-      "Time": 353,
+      "Elapsed": 353,
       "FirstRecord": 319,
       "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
@@ -15,7 +15,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:44.9164+08:00",
+    "Timestamp": "2016-05-30T08:49:44.9164+10:00",
     "Level": "Error",
     "MessageTemplate": "Unhandled exception from web server:  {Message}",
     "Properties": {
@@ -24,10 +24,10 @@
       "Thread": "2283",
       "Message": "The semaphore timeout period has expired"
     },
-    "Exception": "System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired\r\n   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)\r\n   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)\r\n   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)\r\n   at System.IO.Stream.Close()\r\n   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)\r\n   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\Infrastructure\\NancyCompression.cs:line 100\r\n   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 350\r\n   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 338\r\n   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)\r\n   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 0"
+    "Exception": "System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired\n   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)\n   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)\n   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)\n   at System.IO.Stream.Close()\n   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)\n   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\Infrastructure\\NancyCompression.cs:line 100\n   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 350\n   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 338\n   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)\n   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 0"
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.0918+08:00",
+    "Timestamp": "2016-05-30T08:49:46.0918+10:00",
     "Level": "Information",
     "MessageTemplate": "poll://{Id}/ {Message}",
     "Properties": {
@@ -40,7 +40,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.0918+08:00",
+    "Timestamp": "2016-05-30T08:49:46.0918+10:00",
     "Level": "Information",
     "MessageTemplate": "poll://{Id}/ {Message}",
     "Properties": {
@@ -53,14 +53,14 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.1074+08:00",
+    "Timestamp": "2016-05-30T08:49:46.1074+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 17,
       "PID": "",
       "Thread": "1716",
-      "Time": 332,
+      "Elapsed": 332,
       "FirstRecord": 332,
       "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] WHERE (ProjectId = @projectId) ORDER BY Id"
@@ -68,14 +68,14 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.2636+08:00",
+    "Timestamp": "2016-05-30T08:49:46.2636+10:00",
     "Level": "Information",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 18,
       "PID": "",
       "Thread": "2426",
-      "Time": 435,
+      "Elapsed": 435,
       "FirstRecord": 279,
       "Transaction": "TestTransaction",
       "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
@@ -83,7 +83,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.4512+08:00",
+    "Timestamp": "2016-05-30T08:49:46.4512+10:00",
     "Level": "Information",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -97,7 +97,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.4512+08:00",
+    "Timestamp": "2016-05-30T08:49:46.4512+10:00",
     "Level": "Information",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -111,7 +111,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.498+08:00",
+    "Timestamp": "2016-05-30T08:49:46.498+10:00",
     "Level": "Debug",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -125,7 +125,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.5918+08:00",
+    "Timestamp": "2016-05-30T08:49:46.5918+10:00",
     "Level": "Information",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -139,7 +139,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.6856+08:00",
+    "Timestamp": "2016-05-30T08:49:46.6856+10:00",
     "Level": "Information",
     "MessageTemplate": "poll://{Id}/ {Message}",
     "Properties": {
@@ -152,7 +152,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.6856+08:00",
+    "Timestamp": "2016-05-30T08:49:46.6856+10:00",
     "Level": "Information",
     "MessageTemplate": "poll://{Id}/ {Message}",
     "Properties": {
@@ -165,7 +165,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T08:49:46.7949+08:00",
+    "Timestamp": "2016-05-30T08:49:46.7949+10:00",
     "Level": "Information",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -179,7 +179,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T12:09:20.3683+08:00",
+    "Timestamp": "2016-05-30T12:09:20.3683+10:00",
     "Level": "Information",
     "MessageTemplate": "Reader took 406ms (362ms until the first record) in transaction: SELECT * FROM dbo.[Dashboard] ORDER BY Id",
     "Properties": {
@@ -190,14 +190,14 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T12:09:20.4621+08:00",
+    "Timestamp": "2016-05-30T12:09:20.4621+10:00",
     "Level": "Information",
-    "MessageTemplate": "Request took {Time}ms: {Method} {Url} {CorrelationId}",
+    "MessageTemplate": "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}",
     "Properties": {
       "LineNumber": 27,
       "PID": "",
       "Thread": "38",
-      "Time": 1320,
+      "Elapsed": 1320,
       "Method": "POST",
       "Url": "http://demo.octopus.com/api/users/login",
       "CorrelationId": "beb82d8faa3843d0beead27d4ed7ef4e"
@@ -205,7 +205,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2016-05-30T12:09:22.8216+08:00",
+    "Timestamp": "2016-05-30T12:09:22.8216+10:00",
     "Level": "Information",
     "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
     "Properties": {
@@ -219,14 +219,14 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:35.1211+08:00",
+    "Timestamp": "2017-03-24T14:00:35.1211+10:00",
     "Level": "Debug",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 29,
       "PID": "",
       "Thread": "275",
-      "Time": 1,
+      "Elapsed": 1,
       "FirstRecord": 1,
       "Transaction": "ConfigurationStore",
       "Query": "SELECT TOP 1 * FROM dbo.[ExtensionConfiguration] WHERE ([Id] = @id) ORDER BY [Id]"
@@ -234,22 +234,22 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:35.1371+08:00",
+    "Timestamp": "2017-03-24T14:00:35.1371+10:00",
     "Level": "Debug",
-    "MessageTemplate": "Reader took {Time}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
     "Properties": {
       "LineNumber": 30,
       "PID": "",
       "Thread": "161",
-      "Time": 1,
+      "Elapsed": 1,
       "FirstRecord": 1,
       "Transaction": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-1012&name=Deploy 6e59b6beced048b4a27bcf1089461cad",
-      "Query": "SELECT *\r\nFROM (SELECT ALIAS_ServerTask_0.*, Row_Number() over (ORDER BY ALIAS_ServerTask_0.[QueueTime] DESC, ALIAS_ServerTask_0.[Id] DESC) as RowNum FROM (SELECT * FROM dbo.[ServerTask] WHERE ([State] in ('Executing','Cancelling', 'Queued')) AND ([Name] = @taskname) AND ([EnvironmentId] = @environmentid) AND ([ProjectId] = @projectid)) ALIAS_ServerTask_0) RS\r\nWHERE RowNum >= @_minrow And RowNum <= @_maxrow\r\nORDER BY RowNum"
+      "Query": "SELECT *\nFROM (SELECT ALIAS_ServerTask_0.*, Row_Number() over (ORDER BY ALIAS_ServerTask_0.[QueueTime] DESC, ALIAS_ServerTask_0.[Id] DESC) as RowNum FROM (SELECT * FROM dbo.[ServerTask] WHERE ([State] in ('Executing','Cancelling', 'Queued')) AND ([Name] = @taskname) AND ([EnvironmentId] = @environmentid) AND ([ProjectId] = @projectid)) ALIAS_ServerTask_0) RS\nWHERE RowNum >= @_minrow And RowNum <= @_maxrow\nORDER BY RowNum"
     },
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:34.9811+08:00",
+    "Timestamp": "2017-03-24T14:00:34.9811+10:00",
     "Level": "Verbose",
     "MessageTemplate": "{Method} {Url} {CorrelationId}",
     "Properties": {
@@ -263,14 +263,14 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:34.9811+08:00",
+    "Timestamp": "2017-03-24T14:00:34.9811+10:00",
     "Level": "Debug",
-    "MessageTemplate": "Request took {Time}ms: {Method} {Url} {CorrelationId}",
+    "MessageTemplate": "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}",
     "Properties": {
       "LineNumber": 35,
       "PID": "",
       "Thread": "275",
-      "Time": 59,
+      "Elapsed": 59,
       "Method": "GET",
       "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-1&project=Projects-804&name=Deploy",
       "CorrelationId": "38f1b92930a84c31a7aa0e1068887a12"
@@ -278,7 +278,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:00:34.9961+08:00",
+    "Timestamp": "2017-03-24T14:00:34.9961+10:00",
     "Level": "Verbose",
     "MessageTemplate": "{Method} {Url} {CorrelationId}",
     "Properties": {
@@ -292,7 +292,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-03-24T14:13:28.5627+08:00",
+    "Timestamp": "2017-03-24T14:13:28.5627+10:00",
     "Level": "Verbose",
     "MessageTemplate": "{Method} {Url} {CorrelationId}",
     "Properties": {
@@ -306,7 +306,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3142+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3142+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading plugins from: c:\\dev\\OctopusDeploy\\source\\Octopus.Server\\bin\\net451\\BuiltInExtensions",
     "Properties": {
@@ -317,7 +317,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3273+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3273+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading BuiltIn extension: AzureAD (2.0.9.0)",
     "Properties": {
@@ -328,7 +328,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3392+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3392+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading BuiltIn extension: Directory Services (2.0.13.0)",
     "Properties": {
@@ -339,7 +339,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3392+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3392+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading BuiltIn extension: GoogleApps (2.0.9.0)",
     "Properties": {
@@ -350,7 +350,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3611+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3611+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading BuiltIn extension: Guest (2.0.3.0)",
     "Properties": {
@@ -361,7 +361,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.3713+08:00",
+    "Timestamp": "2017-07-12T11:57:43.3713+10:00",
     "Level": "Information",
     "MessageTemplate": "Loading BuiltIn extension: UsernamePassword (2.0.5.0)",
     "Properties": {
@@ -372,7 +372,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:57:43.4352+08:00",
+    "Timestamp": "2017-07-12T11:57:43.4352+10:00",
     "Level": "Information",
     "MessageTemplate": "==== HelpCommand ====",
     "Properties": {
@@ -383,7 +383,7 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:58:34.8992+08:00",
+    "Timestamp": "2017-07-12T11:58:34.8992+10:00",
     "Level": "Information",
     "MessageTemplate": "Octopus.Server.exe version 0.0.0-local (0.0.0-local) instance master",
     "Properties": {
@@ -394,9 +394,9 @@
     "Exception": null
   },
   {
-    "Timestamp": "2017-07-12T11:58:34.9262+08:00",
+    "Timestamp": "2017-07-12T11:58:34.9262+10:00",
     "Level": "Information",
-    "MessageTemplate": "Environment Information:\r\n  OperatingSystem: Microsoft Windows NT 6.2.9200.0\r\n  OsBitVersion: x64\r\n  Is64BitProcess: True\r\n  CurrentUser: MICHAELNOON1449\\michaelnoonan\r\n  MachineName: MICHAELNOON1449\r\n  ProcessorCount: 8\r\n  CurrentDirectory: c:\\dev\\OctopusDeploy\r\n  TempDirectory: C:\\Users\\michaelnoonan\\AppData\\Local\\Temp\\\r\n  HostProcessName: Octopus.Server\r\n  PID: 35412",
+    "MessageTemplate": "Environment Information:\n  OperatingSystem: Microsoft Windows NT 6.2.9200.0\n  OsBitVersion: x64\n  Is64BitProcess: True\n  CurrentUser: MICHAELNOON1449\\michaelnoonan\n  MachineName: MICHAELNOON1449\n  ProcessorCount: 8\n  CurrentDirectory: c:\\dev\\OctopusDeploy\n  TempDirectory: C:\\Users\\michaelnoonan\\AppData\\Local\\Temp\\\n  HostProcessName: Octopus.Server\n  PID: 35412",
     "Properties": {
       "LineNumber": 46,
       "PID": "35412",

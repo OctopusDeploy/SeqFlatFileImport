@@ -9,10 +9,10 @@ namespace SeqFlatFileImport.Tests.Helpers
         public static string GetFilePath(string inputFileName)
         {
             return Path.Combine(
-                Path.GetDirectoryName(typeof(TestHelper).Assembly.CodeBase.Substring(8)),
+                Path.GetDirectoryName(typeof(TestHelper).Assembly.Location) ?? throw new DirectoryNotFoundException(),
                 "LogFiles",
                 inputFileName
-                );
+            );
         }
 
         public static void ShouldBeSuccessful(this IResult result)

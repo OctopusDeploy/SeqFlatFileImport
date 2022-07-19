@@ -42,7 +42,7 @@ namespace SeqFlatFileImport.Core.FileFormats
 
         private static DateTimeOffset ParseTime(string value)
         {
-            return DateTimeOffset.Parse(value);
+            return DateTimeOffset.Parse(value).UtcDateTime;
         }
 
         private static string ParseLevel(string value)
