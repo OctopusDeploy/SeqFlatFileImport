@@ -68,3 +68,4 @@ TestResult.xml
 *.received.*
 packages
 *.trx
+.idea/
