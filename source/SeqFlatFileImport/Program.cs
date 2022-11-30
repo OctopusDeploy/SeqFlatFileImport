@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Lib;
+using SeqFlatFileImport.Core;
 
-namespace Console
+namespace SeqFlatFileImport
 {
     internal static class Program
     {
@@ -18,7 +18,7 @@ namespace Console
                 return 2;
 
             var inputFiles = GetFiles(options.InputPaths);
-            var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: System.Console.WriteLine, batchId: options.BatchId);
+            var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: Console.WriteLine, batchId: options.BatchId);
             foreach (var file in inputFiles)
             {
                 WriteLine(ConsoleColor.White, $"Importing {file}... ");
@@ -62,17 +62,17 @@ namespace Console
 
         private static void WriteLine(ConsoleColor colour, string str)
         {
-            System.Console.ForegroundColor = colour;
-            System.Console.WriteLine(str);
-            System.Console.ResetColor();
+            Console.ForegroundColor = colour;
+            Console.WriteLine(str);
+            Console.ResetColor();
         }
 
         private static void WriteError(params string[] errors)
         {
-            System.Console.ForegroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Red;
             foreach (var error in errors)
-                System.Console.Error.WriteLine(error);
-            System.Console.ResetColor();
+                Console.Error.WriteLine(error);
+            Console.ResetColor();
         }
     }
 }

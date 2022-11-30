@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Lib\Lib.csproj" />
+    <ProjectReference Include="..\SeqFlatFileImport.Core\SeqFlatFileImport.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>

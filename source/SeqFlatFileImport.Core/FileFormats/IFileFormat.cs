@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Lib.FileFormats
+namespace SeqFlatFileImport.Core.FileFormats
 {
     public interface IFileFormat
     {

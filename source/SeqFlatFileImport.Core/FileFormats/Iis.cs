@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Lib.FileFormats
+namespace SeqFlatFileImport.Core.FileFormats
 {
     public class Iis : IFileFormat
     {

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Lib.FileFormats;
+using SeqFlatFileImport.Core.FileFormats;
 
-namespace Lib
+namespace SeqFlatFileImport.Core
 {
     public class Importer
     {

@@ -1,7 +1,6 @@
-using System;
 using System.IO;
-using Lib;
 using NUnit.Framework;
+using SeqFlatFileImport.Core;
 
 namespace Tests.Helpers
 {

@@ -3,8 +3,7 @@
   <PropertyGroup>
     <VersionPrefix>0.1.0</VersionPrefix>
     <TargetFramework>net6.0</TargetFramework>
-    <AssemblyName>Lib</AssemblyName>
-    <PackageId>Lib</PackageId>
+    <PackageId>SeqFlatFileImport.Core</PackageId>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>

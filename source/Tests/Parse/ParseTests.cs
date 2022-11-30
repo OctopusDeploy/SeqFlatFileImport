@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
 using Assent;
-using Lib;
 using NUnit.Framework;
+using SeqFlatFileImport.Core;
 using Tests.Helpers;
 
 namespace Tests.Parse

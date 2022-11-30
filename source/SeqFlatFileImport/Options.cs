@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using NDesk.Options;
 
-namespace Console
+namespace SeqFlatFileImport
 {
     internal class Options
     {

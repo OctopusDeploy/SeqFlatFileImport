@@ -1,6 +1,6 @@
 using System.IO;
-using Lib;
 using NUnit.Framework;
+using SeqFlatFileImport.Core;
 using Tests.Helpers;
 
 namespace Tests

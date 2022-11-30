@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace Lib.FileFormats
+namespace SeqFlatFileImport.Core.FileFormats
 {
     public class OctopusRawTask : IFileFormat
     {

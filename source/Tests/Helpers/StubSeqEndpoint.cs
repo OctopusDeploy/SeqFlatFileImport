@@ -1,6 +1,6 @@
 using System.Collections.Generic;
-using Lib;
 using Newtonsoft.Json;
+using SeqFlatFileImport.Core;
 
 namespace Tests.Helpers
 {

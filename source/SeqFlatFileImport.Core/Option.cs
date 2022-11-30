@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
-namespace Lib
+namespace SeqFlatFileImport.Core
 {
     public class Option<T>
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Lib
+namespace SeqFlatFileImport.Core
 {
     public class RawEvent
     {

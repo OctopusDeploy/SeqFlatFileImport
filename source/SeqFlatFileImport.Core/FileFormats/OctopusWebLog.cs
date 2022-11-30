@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Lib.FileFormats
+namespace SeqFlatFileImport.Core.FileFormats
 {
     public class OctopusWebLog : IFileFormat
     {
