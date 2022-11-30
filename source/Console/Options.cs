@@ -1,8 +1,7 @@
-using System;
 using System.Collections.Generic;
 using NDesk.Options;
 
-namespace SeqFlatFileImport
+namespace Console
 {
     internal class Options
     {
@@ -14,7 +13,7 @@ namespace SeqFlatFileImport
         public string SeqServer { get; private set; }
         public string SeqApiKey { get; private set; }
         public string Format { get; private set; }
-        public string BatchId { get; set; }
+        public string BatchId { get; private set; }
 
         public static Options Parse(string[] args)
         {
@@ -32,13 +31,13 @@ namespace SeqFlatFileImport
             options.InputPaths = optionSet.Parse(args);
             if (help)
             {
-                optionSet.WriteOptionDescriptions(Console.Out);
+                optionSet.WriteOptionDescriptions(System.Console.Out);
                 return null;
             }
 
             if (options.InputPaths.Count == 0)
             {
-                Console.Error.WriteLine("No input files or directories specified");
+                System.Console.Error.WriteLine("No input files or directories specified");
                 return null;
             }
 

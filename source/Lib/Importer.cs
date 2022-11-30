@@ -1,19 +1,17 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
-using Seq.Api;
-using SeqFlatFileImport.FileFormats;
+using Lib.FileFormats;
 
-namespace SeqFlatFileImport
+namespace Lib
 {
     public class Importer
     {
         private readonly Action<string> _progressCallback;
 
-        public static List<IFileFormat> DefaultFileFormats { get; } =
+        private static List<IFileFormat> DefaultFileFormats { get; } =
             typeof(Importer).Assembly.GetTypes()
             .Where(t => t.IsClass && !t.IsAbstract && typeof(IFileFormat).IsAssignableFrom(t))
             .Select(t => (IFileFormat) Activator.CreateInstance(t))
@@ -61,13 +59,13 @@ namespace SeqFlatFileImport
             return Result.Failed<IFileFormat>("Could not autodetect file type");
         }
 
-        public Result<IFileFormat> FindFormatByName(string formatName)
+        private Result<IFileFormat> FindFormatByName(string formatName)
         {
             return _fileFormats.FirstOrNone(f => f.Name.Equals(formatName, StringComparison.CurrentCultureIgnoreCase))
                 .ToResult($"Could not find the file format '{formatName}'");
         }
 
-        public IResult Import(Stream stream, IFileFormat format)
+        private IResult Import(Stream stream, IFileFormat format)
         {
             var line = 0;
             using (var reader = new Reader(stream))

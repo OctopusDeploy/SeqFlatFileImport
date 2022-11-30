@@ -1,14 +1,16 @@
+using System;
 using System.IO;
+using Lib;
 using NUnit.Framework;
 
-namespace SeqFlatFileImport.Tests.Helpers
+namespace Tests.Helpers
 {
     public static class TestHelper
     {
         public static string GetFilePath(string inputFileName)
         {
             return Path.Combine(
-                Path.GetDirectoryName(typeof(TestHelper).Assembly.CodeBase.Substring(8)),
+                Path.GetDirectoryName(typeof(TestHelper).Assembly.Location) ?? throw new DirectoryNotFoundException(),
                 "LogFiles",
                 inputFileName
                 );

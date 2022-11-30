@@ -3,38 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public class OctopusTask : IFileFormat
     {
         private const string HeaderStart = "                    |";
-        private static readonly Regex messageRegex = new Regex(@"^(?<Time>[0-9\:]{8})? +(?<Level>[A-Za-z]+) +\| +(?<Message>.+)$");
-        public string Name { get; } = "OctopusTask";
+        private static readonly Regex MessageRegex = new(@"^(?<Time>[0-9\:]{8})? +(?<Level>[A-Za-z]+) +\| +(?<Message>.+)$");
+        public string Name => "OctopusTask";
         public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[] { @"ServerTasks-.*" };
-        public int Ordinal { get; } = 0;
+        public int Ordinal => 0;
+
         public bool AutodetectFromContents(string[] firstFewLines)
         {
-            if (firstFewLines.Length == 0)
-                return false;
-            return firstFewLines[0].StartsWith("Task ID:");
+            return firstFewLines.Length != 0 && firstFewLines[0].StartsWith("Task ID:");
         }
-
-
-
-
-
+        
         public IEnumerable<RawEvent> Read(IEnumerable<string> lines)
         {
             var header = GetHeader(lines);
             if (header.Queued.HasValue)
-                yield return new RawEvent()
+                yield return new RawEvent
                 {
                     Level = "Information",
                     MessageTemplate = "Task {TaskID} queued",
                     Timestamp = new DateTimeOffset(header.Queued.Value),
                     Properties = header.Properties
                 };
-            yield return new RawEvent()
+            yield return new RawEvent
             {
                 Level = "Information",
                 MessageTemplate = "Task {TaskID} started",
@@ -42,7 +37,7 @@ namespace SeqFlatFileImport.FileFormats
                 Properties = header.Properties
             };
 
-            var properties = new Dictionary<string, object>()
+            var properties = new Dictionary<string, object>
             {
                 {"Task ID", header.Id}
             };
@@ -58,11 +53,11 @@ namespace SeqFlatFileImport.FileFormats
                 }
                 else
                 {
-                    var match = messageRegex.Match(line);
+                    var match = MessageRegex.Match(line);
                     if (!match.Success)
                         throw new Exception("Unexpected line: " + line);
 
-                    yield return new RawEvent()
+                    yield return new RawEvent
                     {
                         Level = ParseLevel(match.Groups["Level"].Value),
                         Timestamp = ParseTime(match.Groups["Time"].Value, header),
@@ -74,8 +69,7 @@ namespace SeqFlatFileImport.FileFormats
 
         }
 
-        private readonly Func<string, Dictionary<string, object>, bool>[] SectionParsers = new Func<string, Dictionary<string, object>, bool>[]
-        {
+        private readonly Func<string, Dictionary<string, object>, bool>[] SectionParsers = {
             OverallSection,
             StepSection,
             AquirePackagesSection,
@@ -141,15 +135,13 @@ namespace SeqFlatFileImport.FileFormats
                 properties[name] = match.Groups[name].Value;
         }
 
-        private string ParseLevel(string value)
+        private static string ParseLevel(string value)
         {
-            switch (value)
+            return value switch
             {
-                case "Info":
-                    return "Information";
-                default:
-                    return value;
-            }
+                "Info" => "Information",
+                _ => value
+            };
         }
 
         private static DateTimeOffset ParseTime(string value, Header header)
@@ -159,7 +151,7 @@ namespace SeqFlatFileImport.FileFormats
             return new DateTimeOffset(timestamp);
         }
 
-        private Header GetHeader(IEnumerable<string> lines)
+        private static Header GetHeader(IEnumerable<string> lines)
         {
             var regex = new Regex("^([A-Za-z ]+): +(.+)$");
             var header = new Header();
@@ -197,7 +189,7 @@ namespace SeqFlatFileImport.FileFormats
         {
             public DateTime? Queued { get; set; }
             public DateTime Started { get; set; }
-            public Dictionary<string, object> Properties { get; } = new Dictionary<string, object>();
+            public Dictionary<string, object> Properties { get; } = new();
             public string Id { get; set; }
         }
     }

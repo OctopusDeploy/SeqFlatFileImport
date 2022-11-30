@@ -2,14 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 
-namespace SeqFlatFileImport
+namespace Lib
 {
     public class Option<T>
     {
         private readonly T _value;
-        public static readonly Option<T> ToNone = new Option<T>(false, default(T));
+        public static readonly Option<T> ToNone = new(false, default);
 
-        public static Option<T> ToSome(T value) => new Option<T>(true, value);
+        public static Option<T> ToSome(T value) => new(true, value);
 
         private Option(bool some, T value)
         {
@@ -18,7 +18,6 @@ namespace SeqFlatFileImport
         }
 
         public bool Some { get; }
-        public bool None => !Some;
 
         public T Value
         {
@@ -33,18 +32,17 @@ namespace SeqFlatFileImport
 
     public static class OptionExtensions
     {
-        public static Option<T> Some<T>(this T value) => Option<T>.ToSome(value);
-        public static Option<T> None<T>(this T value) => Option<T>.ToNone;	
+        private static Option<T> Some<T>(this T value) => Option<T>.ToSome(value);
 
-             
+
         public static Option<TSource> FirstOrNone<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate)
         {
             if (source == null)
-                throw new ArgumentNullException("source");
+                throw new ArgumentNullException(nameof(source));
             if (predicate == null)
-                throw new ArgumentNullException("predicate");
+                throw new ArgumentNullException(nameof(predicate));
 
-            foreach (TSource item in source)
+            foreach (var item in source)
             {
                 if (predicate(item))
                     return item.Some();

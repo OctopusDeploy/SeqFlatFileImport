@@ -1,9 +1,10 @@
 using System.Runtime.CompilerServices;
 using Assent;
+using Lib;
 using NUnit.Framework;
-using SeqFlatFileImport.Tests.Helpers;
+using Tests.Helpers;
 
-namespace SeqFlatFileImport.Tests.Parse
+namespace Tests.Parse
 {
     public class ParseTests
     {
@@ -38,7 +39,7 @@ namespace SeqFlatFileImport.Tests.Parse
             Execute("servertasks-21_gjzwyyv2kt.txt");
         }
 
-        public void Execute(string inputFileName, [CallerMemberName] string testName = null)
+        private void Execute(string inputFileName, [CallerMemberName] string testName = null)
         {
             var seqServer = new StubSeqEndpoint();
             var result = new Importer(seqServer)

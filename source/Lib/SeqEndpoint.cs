@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using Seq.Api;
 
-namespace SeqFlatFileImport
+namespace Lib
 {
     internal interface ISeqEndpoint
     {

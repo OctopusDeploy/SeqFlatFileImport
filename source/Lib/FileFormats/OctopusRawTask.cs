@@ -5,13 +5,14 @@ using System.Text.RegularExpressions;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public class OctopusRawTask : IFileFormat
     {
-        public string Name { get; } = "OctopusRawTask";
+        public string Name => "OctopusRawTask";
         public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[] { @"servertasks-\d+.*txt" };
-        public int Ordinal { get; } = 0;
+        public int Ordinal => 0;
+
         public bool AutodetectFromContents(string[] firstFewLines)
         {
             if (firstFewLines.Length == 0)
@@ -42,29 +43,23 @@ namespace SeqFlatFileImport.FileFormats
 
         private static DateTimeOffset ParseTime(string value)
         {
-            return DateTimeOffset.Parse(value);
+            return DateTimeOffset.Parse(value).UtcDateTime;
         }
 
         private static string ParseLevel(string value)
         {
-            switch (value)
+            return value switch
             {
-                case "INF":
-                    return "Information";
-                case "VBS":
-                    return "Verbose";
-                case "WRN":
-                    return "Warning";
-                case "ERR":
-                    return "Error";
-                case "FAT":
-                    return "Fatal";
-                default:
-                    return value;
-            }
+                "INF" => "Information",
+                "VBS" => "Verbose",
+                "WRN" => "Warning",
+                "ERR" => "Error",
+                "FAT" => "Fatal",
+                _ => value
+            };
         }
 
-        private static readonly Regex TaskId = new Regex(@"^(?<TaskId>\w+-\d+)");
+        private static readonly Regex TaskId = new(@"^(?<TaskId>\w+-\d+)");
         private readonly IDictionary<string, string> correlationProperties = new Dictionary<string, string>();
 
         private Dictionary<string, object> ParseProperties(string correlationId, string message)
@@ -79,8 +74,7 @@ namespace SeqFlatFileImport.FileFormats
             for (var i = 1; i < tokens.Length; i++)
             {
                 var token = tokens[i];
-                string value;
-                if (correlationProperties.TryGetValue(token, out value))
+                if (correlationProperties.TryGetValue(token, out var value))
                 {
                     properties[$"Property {i}"] = value;
                 }

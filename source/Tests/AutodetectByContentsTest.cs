@@ -1,8 +1,9 @@
 using System.IO;
+using Lib;
 using NUnit.Framework;
-using SeqFlatFileImport.Tests.Helpers;
+using Tests.Helpers;
 
-namespace SeqFlatFileImport.Tests
+namespace Tests
 {
     public class AutodetectByContentsTest
     {

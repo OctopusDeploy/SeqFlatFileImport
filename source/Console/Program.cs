@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Lib;
 
-namespace SeqFlatFileImport
+namespace Console
 {
-    class Program
+    internal static class Program
     {
-        static int Main(string[] args)
+        private static int Main(string[] args)
         {
             var options = Options.Parse(args);
             if (options == null)
@@ -17,7 +18,7 @@ namespace SeqFlatFileImport
                 return 2;
 
             var inputFiles = GetFiles(options.InputPaths);
-            var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: Console.WriteLine, batchId: options.BatchId);
+            var importer = new Importer(seqServer: options.SeqServer, seqApiKey: options.SeqApiKey, progressCallback: System.Console.WriteLine, batchId: options.BatchId);
             foreach (var file in inputFiles)
             {
                 WriteLine(ConsoleColor.White, $"Importing {file}... ");
@@ -61,17 +62,17 @@ namespace SeqFlatFileImport
 
         private static void WriteLine(ConsoleColor colour, string str)
         {
-            Console.ForegroundColor = colour;
-            Console.WriteLine(str);
-            Console.ResetColor();
+            System.Console.ForegroundColor = colour;
+            System.Console.WriteLine(str);
+            System.Console.ResetColor();
         }
 
         private static void WriteError(params string[] errors)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
+            System.Console.ForegroundColor = ConsoleColor.Red;
             foreach (var error in errors)
-                Console.Error.WriteLine(error);
-            Console.ResetColor();
+                System.Console.Error.WriteLine(error);
+            System.Console.ResetColor();
         }
     }
 }

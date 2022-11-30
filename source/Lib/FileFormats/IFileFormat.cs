@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public interface IFileFormat
     {

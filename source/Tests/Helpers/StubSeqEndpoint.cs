@@ -1,8 +1,8 @@
-using System;
 using System.Collections.Generic;
+using Lib;
 using Newtonsoft.Json;
 
-namespace SeqFlatFileImport.Tests.Helpers
+namespace Tests.Helpers
 {
     public class StubSeqEndpoint : ISeqEndpoint
     {

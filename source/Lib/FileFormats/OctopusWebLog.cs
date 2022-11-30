@@ -1,30 +1,28 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public class OctopusWebLog : IFileFormat
     {
-        public string Name { get; } = "OctopusWebLog";
+        public string Name => "OctopusWebLog";
 
         public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[]
         {
             @"Web-[0-9]{4}-[0-9]{2}-[0-9]{2}\.log"
         };
 
-        public int Ordinal { get; } = 0;
+        public int Ordinal => 0;
+
         public bool AutodetectFromContents(string[] firstFewLines)
         {
-            if (firstFewLines.Length == 0)
-                return false;
-            return firstFewLines[0].StartsWith("#Software: Octopus Deploy");
+            return firstFewLines.Length != 0 && firstFewLines[0].StartsWith("#Software: Octopus Deploy");
         }
 
         public IEnumerable<RawEvent> Read(IEnumerable<string> lines)
         {
-            var fieldNames = new string[0];
+            var fieldNames = Array.Empty<string>();
 
             foreach (var line in lines.Where(l => l.Length > 0))
             {
@@ -55,7 +53,7 @@ namespace SeqFlatFileImport.FileFormats
         }
 
 
-        private DateTimeOffset GetTimestamp(Dictionary<string, object> properties)
+        private static DateTimeOffset GetTimestamp(Dictionary<string, object> properties)
         {
             return new DateTimeOffset(DateTime.Parse(properties["date"] + " " + properties["time"]), TimeSpan.Zero);
         }

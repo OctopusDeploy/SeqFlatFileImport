@@ -1,20 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public class Iis : IFileFormat
     {
-        public virtual string Name { get; } = "IIS";
+        public virtual string Name => "IIS";
+
         public virtual IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[]
         {
             @"u_ex[0-9]{6}\.log"
         };
 
-        public int Ordinal { get; } = 0;
+        public int Ordinal => 0;
+
         public bool AutodetectFromContents(string[] firstFewLines)
         {
             if (firstFewLines.Length == 0)
@@ -24,7 +25,7 @@ namespace SeqFlatFileImport.FileFormats
 
         public IEnumerable<RawEvent> Read(IEnumerable<string> lines)
         {
-            var fieldNames = new string[0];
+            var fieldNames = Array.Empty<string>();
             var template = "";
             
             foreach (var line in lines.Where(l => l.Length > 0))

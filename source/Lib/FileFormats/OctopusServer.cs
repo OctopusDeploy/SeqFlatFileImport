@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SeqFlatFileImport.FileFormats
+namespace Lib.FileFormats
 {
     public class OctopusServer : IFileFormat
     {
@@ -11,90 +11,90 @@ namespace SeqFlatFileImport.FileFormats
         /// Octopus 3.x -> 3.15.x
         /// </summary>
         private static readonly Regex LineRegex_3_0 =
-            new Regex(
+            new(
                 @"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
 
         /// <summary>
         /// We added PID in 3.15.x
         /// </summary>
         private static readonly Regex LineRegex_3_15 =
-            new Regex(
+            new(
                 @"^(?<Timestamp>[0-9\-]{10} [0-9\:\.]{13}) +(?<PID>[0-9]+) +(?<Thread>[0-9]+) +(?<Level>[A-Z]+) +(?<Message>.+)$");
 
-        private static readonly Regex ExceptionRegex = new Regex(@"Exception \(0x[0-9]+\):");
-        private static readonly RegexOptions DefaultOptions = RegexOptions.Singleline;
+        private static readonly Regex ExceptionRegex = new(@"Exception \(0x[0-9]+\):");
+        private const RegexOptions DefaultOptions = RegexOptions.Singleline;
 
         private static readonly TemplateRegex[] TemplateRegexes =
         {
-            new TemplateRegex(
+            new(
                 new Regex(
                     @"^Reader took (?<Elapsed>[0-9]+)ms \((?<FirstRecord>[0-9]+)ms until the first record\) in transaction '(?<Transaction>.*)': (?<Query>.*)",
                     DefaultOptions),
                 "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^(?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)", DefaultOptions),
                 "{Method} {Url} {CorrelationId}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^Request took (?<Elapsed>[0-9]+)ms: (?<Method>[A-Z]+)\s+(?<Url>http.*) (?<CorrelationId>.*)",
                     DefaultOptions),
                 "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^(?<Operation>[A-Za-z]+) took (?<Elapsed>[0-9]+)ms: (?<Query>.*)", DefaultOptions),
                 "{Operation} took {Elapsed}ms: {Query}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^Unhandled exception from web server: (?<Message>.*)", DefaultOptions),
                 "Unhandled exception from web server:  {Message}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^listen://(?<IP>.+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "listen://{IP}:{Port}/ {Message}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^poll://(?<Id>[a-z0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "poll://{Id}/ {Message}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Retry attempt (?<n>[0-9]+)",
                     DefaultOptions),
                 "https://{Host}:{Port}/ Retry attempt {n}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Opening a new connection$",
                     DefaultOptions),
                 "https://{Host}:{Port}/ Opening a new connection"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ + Performing TLS handshake$",
                     DefaultOptions),
                 "https://{Host}:{Port}/ Performing TLS handshake"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(
                     @"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +Secure connection established. Server at (?<Endpoint>[^ ]+) identified by thumbprint: (?<Thumbprint>[A-Z0-9]+), using protocol (?<Protocol>[A-Za-z0-9]+)",
                     DefaultOptions),
                 "https://{Host}:{Port}/ Secure connection established. Server at {Endpoint} identified by thumbprint: {Thumbprint}, using protocol {Protocol}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(
                     @"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +No connection could be made because the target machine actively refused it (?<Endpoint>.+)$",
                     DefaultOptions),
                 "https://{Host}:{Port}/ No connection could be made because the target machine actively refused it {Endpoint}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(@"^https://(?<Host>[^:]+):(?<Port>[0-9]+)/ +[0-9]+ +(?<Message>.*)", DefaultOptions),
                 "https://{Host}:{Port}/ {Message}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(
                     @"""(?<Protocol>[A-Z]+)"" ""(?<Method>[A-Z]+)"" to ""(?<Url>.*)"" completed with (?<Code>[0-9]+) in .* \((?<Elapsed>[0-9]+.[0-9]+)ms\)",
                     DefaultOptions),
                 "{Protocol} {Method} to {Url} completed with {Code} in {Elapsed}"
             ),
-            new TemplateRegex(
+            new(
                 new Regex(
                     @"^Execute reader took (?<Elapsed>[0-9]+)ms in transaction '(?<Transaction>.*)': (?<Query>.*)",
                     DefaultOptions),
@@ -102,9 +102,9 @@ namespace SeqFlatFileImport.FileFormats
             )
         };
 
-        public string Name { get; } = "OctopusServer";
+        public string Name => "OctopusServer";
         public IReadOnlyList<string> AutodetectFileNameRegexes { get; } = new[] {@"OctopusServer.*\.txt"};
-        public int Ordinal { get; } = 0;
+        public int Ordinal => 0;
 
         public bool AutodetectFromContents(string[] firstFewLines)
         {
@@ -193,17 +193,15 @@ namespace SeqFlatFileImport.FileFormats
                 {
                     foreach (var name in tr.Regex.GetGroupNames().Where(n => n != "0"))
                     {
-                        string strVal = match.Groups[name].Value;
-                        int intVal;
-                        if (int.TryParse(strVal, out intVal))
+                        var strVal = match.Groups[name].Value;
+                        if (int.TryParse(strVal, out var intVal))
                             properties[name] = intVal;
-                        if (float.TryParse(strVal, out var floatVal))
+                        else if (float.TryParse(strVal, out var floatVal))
                             properties[name] = floatVal;
                         else
                             properties[name] = strVal;
                     }
-
-
+                    
                     return tr.Template;
                 }
             }
@@ -213,24 +211,18 @@ namespace SeqFlatFileImport.FileFormats
 
         private static string ConvertLevel(string str)
         {
-            switch (str)
+            return str switch
             {
-                case "FATAL":
-                    return "Fatal";
-                case "ERROR":
-                    return "Error";
-                case "WARN":
-                    return "Warning";
-                case "DEBUG":
-                    return "Debug";
-                case "TRACE":
-                    return "Verbose";
-                default:
-                    return "Information";
-            }
+                "FATAL" => "Fatal",
+                "ERROR" => "Error",
+                "WARN" => "Warning",
+                "DEBUG" => "Debug",
+                "TRACE" => "Verbose",
+                _ => "Information"
+            };
         }
 
-        class TemplateRegex
+        private class TemplateRegex
         {
             public Regex Regex { get; }
             public string Template { get; }
