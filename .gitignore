@@ -68,3 +68,4 @@ TestResult.xml
 packages
 *.trx
 .idea/
+!**/LogFiles/*
