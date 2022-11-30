@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using SeqFlatFileImport.Core;
 
-namespace Tests.Helpers
+namespace SeqFlatFileImport.Tests.Helpers
 {
     public class StubSeqEndpoint : ISeqEndpoint
     {

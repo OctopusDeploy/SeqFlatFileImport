@@ -2,9 +2,9 @@ using System.Runtime.CompilerServices;
 using Assent;
 using NUnit.Framework;
 using SeqFlatFileImport.Core;
-using Tests.Helpers;
+using SeqFlatFileImport.Tests.Helpers;
 
-namespace Tests.Parse
+namespace SeqFlatFileImport.Tests.Parse
 {
     public class ParseTests
     {

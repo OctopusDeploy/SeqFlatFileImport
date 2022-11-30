@@ -2,7 +2,7 @@ using System.IO;
 using NUnit.Framework;
 using SeqFlatFileImport.Core;
 
-namespace Tests.Helpers
+namespace SeqFlatFileImport.Tests.Helpers
 {
     public static class TestHelper
     {
