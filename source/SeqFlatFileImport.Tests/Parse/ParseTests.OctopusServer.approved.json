@@ -1,0 +1,407 @@
+﻿[
+  {
+    "Timestamp": "2016-05-30T00:00:00.1811+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 1,
+      "PID": "",
+      "Thread": "2749",
+      "Elapsed": 353,
+      "FirstRecord": 319,
+      "Transaction": "TestTransaction",
+      "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:44.9164+10:00",
+    "Level": "Error",
+    "MessageTemplate": "Unhandled exception from web server:  {Message}",
+    "Properties": {
+      "LineNumber": 2,
+      "PID": "",
+      "Thread": "2283",
+      "Message": "The semaphore timeout period has expired"
+    },
+    "Exception": "System.Net.HttpListenerException (0x80004005): The semaphore timeout period has expired\r\n   at System.Net.HttpResponseStream.Write(Byte[] buffer, Int32 offset, Int32 size)\r\n   at System.IO.Compression.DeflateStream.PurgeBuffers(Boolean disposing)\r\n   at System.IO.Compression.DeflateStream.Dispose(Boolean disposing)\r\n   at System.IO.Stream.Close()\r\n   at System.IO.Compression.GZipStream.Dispose(Boolean disposing)\r\n   at Octopus.Server.Web.Infrastructure.NancyCompression.<>c__DisplayClass3_0.<CompressResponse>b__0(Stream responseStream) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\Infrastructure\\NancyCompression.cs:line 100\r\n   at Octopus.Server.Web.OctopusNancyHost.OutputWithDefaultTransferEncoding(Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 350\r\n   at Octopus.Server.Web.OctopusNancyHost.ConvertNancyResponseToResponse(NancyContext nancyRequest, Response nancyResponse, HttpListenerResponse response) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 338\r\n   at Nancy.NancyEngineExtensions.HandleRequest(INancyEngine nancyEngine, Request request, Func`2 preRequest, Action`1 onComplete, Action`1 onError, CancellationToken cancellationToken)\r\n   at Octopus.Server.Web.OctopusNancyHost.Process(HttpListenerContext ctx) in Y:\\work\\refs\\tags\\3.3.15\\source\\Octopus.Server\\Web\\OctopusNancyHost.cs:line 0"
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.0918+10:00",
+    "Level": "Information",
+    "MessageTemplate": "poll://{Id}/ {Message}",
+    "Properties": {
+      "LineNumber": 15,
+      "PID": "",
+      "Thread": "1717",
+      "Id": "b2yf9fvn5hggm5hvjz72",
+      "Message": "Request IScriptService::GetStatus[610] / d5d0972f-1db3-4cde-ac71-5e42c9114040 was queued"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.0918+10:00",
+    "Level": "Information",
+    "MessageTemplate": "poll://{Id}/ {Message}",
+    "Properties": {
+      "LineNumber": 16,
+      "PID": "",
+      "Thread": "1717",
+      "Id": "b2yf9fvn5hggm5hvjz72",
+      "Message": "Request IScriptService::GetStatus[610] / d5d0972f-1db3-4cde-ac71-5e42c9114040 was collected by the polling endpoint"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.1074+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 17,
+      "PID": "",
+      "Thread": "1716",
+      "Elapsed": 332,
+      "FirstRecord": 332,
+      "Transaction": "TestTransaction",
+      "Query": "SELECT * FROM dbo.[Dashboard] WHERE (ProjectId = @projectId) ORDER BY Id"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.2636+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 18,
+      "PID": "",
+      "Thread": "2426",
+      "Elapsed": 435,
+      "FirstRecord": 279,
+      "Transaction": "TestTransaction",
+      "Query": "SELECT * FROM dbo.[Dashboard] ORDER BY Id"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.4512+10:00",
+    "Level": "Information",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 19,
+      "PID": "",
+      "Thread": "1056",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "Accepted TCP client: [::ffff:82.208.129.105]:63248"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.4512+10:00",
+    "Level": "Information",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 20,
+      "PID": "",
+      "Thread": "1062",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "Performing TLS server handshake"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.498+10:00",
+    "Level": "Debug",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 21,
+      "PID": "",
+      "Thread": "1062",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "Secure connection established, client is not yet authenticated, client connected with Tls12"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.5918+10:00",
+    "Level": "Information",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 22,
+      "PID": "",
+      "Thread": "1062",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "A client at [::ffff:82.208.129.105]:63248 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '644500E8DEB23FA2FE6E009897A0DC4CA51B07BF' which is not in the list of thumbprints that we trust"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.6856+10:00",
+    "Level": "Information",
+    "MessageTemplate": "poll://{Id}/ {Message}",
+    "Properties": {
+      "LineNumber": 23,
+      "PID": "",
+      "Thread": "2413",
+      "Id": "b2yf9fvn5hggm5hvjz72",
+      "Message": "Request IScriptService::GetStatus[177] / 25f849d3-fc86-476c-ba02-de8eeb3566dc was queued"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.6856+10:00",
+    "Level": "Information",
+    "MessageTemplate": "poll://{Id}/ {Message}",
+    "Properties": {
+      "LineNumber": 24,
+      "PID": "",
+      "Thread": "2413",
+      "Id": "b2yf9fvn5hggm5hvjz72",
+      "Message": "Request IScriptService::GetStatus[177] / 25f849d3-fc86-476c-ba02-de8eeb3566dc was collected by the polling endpoint"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T08:49:46.7949+10:00",
+    "Level": "Information",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 25,
+      "PID": "",
+      "Thread": "2424",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "Accepted TCP client: [::ffff:40.68.217.115]:1215"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T12:09:20.3683+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Reader took 406ms (362ms until the first record) in transaction: SELECT * FROM dbo.[Dashboard] ORDER BY Id",
+    "Properties": {
+      "LineNumber": 26,
+      "PID": "",
+      "Thread": "412"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T12:09:20.4621+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 27,
+      "PID": "",
+      "Thread": "38",
+      "Elapsed": 1320,
+      "Method": "POST",
+      "Url": "http://demo.octopus.com/api/users/login",
+      "CorrelationId": "beb82d8faa3843d0beead27d4ed7ef4e"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-05-30T12:09:22.8216+10:00",
+    "Level": "Information",
+    "MessageTemplate": "listen://{IP}:{Port}/ {Message}",
+    "Properties": {
+      "LineNumber": 28,
+      "PID": "",
+      "Thread": "530",
+      "IP": "[::]",
+      "Port": 10943,
+      "Message": "A client at [::ffff:40.68.217.115]:1198 connected, and attempted a message exchange, but it presented a client certificate with the thumbprint '5A53F4E04DE1216DFCAD66735FD04120DB70C74D' which is not in the list of thumbprints that we trust"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:35.1211+11:00",
+    "Level": "Debug",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 29,
+      "PID": "",
+      "Thread": "275",
+      "Elapsed": 1,
+      "FirstRecord": 1,
+      "Transaction": "ConfigurationStore",
+      "Query": "SELECT TOP 1 * FROM dbo.[ExtensionConfiguration] WHERE ([Id] = @id) ORDER BY [Id]"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:35.1371+11:00",
+    "Level": "Debug",
+    "MessageTemplate": "Reader took {Elapsed}ms ({FirstRecord}ms until the first record) in transaction '{Transaction}': {Query}",
+    "Properties": {
+      "LineNumber": 30,
+      "PID": "",
+      "Thread": "161",
+      "Elapsed": 1,
+      "FirstRecord": 1,
+      "Transaction": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-1012&name=Deploy 6e59b6beced048b4a27bcf1089461cad",
+      "Query": "SELECT *\r\nFROM (SELECT ALIAS_ServerTask_0.*, Row_Number() over (ORDER BY ALIAS_ServerTask_0.[QueueTime] DESC, ALIAS_ServerTask_0.[Id] DESC) as RowNum FROM (SELECT * FROM dbo.[ServerTask] WHERE ([State] in ('Executing','Cancelling', 'Queued')) AND ([Name] = @taskname) AND ([EnvironmentId] = @environmentid) AND ([ProjectId] = @projectid)) ALIAS_ServerTask_0) RS\r\nWHERE RowNum >= @_minrow And RowNum <= @_maxrow\r\nORDER BY RowNum"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9811+11:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 34,
+      "PID": "",
+      "Thread": "161",
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-805&name=Deploy",
+      "CorrelationId": "beb82d8faa3843d0beead27d4ed7ef4e"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9811+11:00",
+    "Level": "Debug",
+    "MessageTemplate": "Request took {Elapsed}ms: {Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 35,
+      "PID": "",
+      "Thread": "275",
+      "Elapsed": 59,
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-1&project=Projects-804&name=Deploy",
+      "CorrelationId": "38f1b92930a84c31a7aa0e1068887a12"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:00:34.9961+11:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 36,
+      "PID": "",
+      "Thread": "275",
+      "Method": "GET",
+      "Url": "http://demo.octopus.com/api/tasks?skip=0&active=True&environment=Environments-3&project=Projects-667&name=Deploy",
+      "CorrelationId": "a89ccbcc4f794ed19ef6846e9a125d3b"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-03-24T14:13:28.5627+11:00",
+    "Level": "Verbose",
+    "MessageTemplate": "{Method} {Url} {CorrelationId}",
+    "Properties": {
+      "LineNumber": 37,
+      "PID": "",
+      "Thread": "96",
+      "Method": "GET",
+      "Url": "http://octopus/api/dashboard",
+      "CorrelationId": "fb4338ce8da348c7b8e4c297cf7704df"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3142+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading plugins from: c:\\dev\\OctopusDeploy\\source\\Octopus.Server\\bin\\net451\\BuiltInExtensions",
+    "Properties": {
+      "LineNumber": 38,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3273+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading BuiltIn extension: AzureAD (2.0.9.0)",
+    "Properties": {
+      "LineNumber": 39,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3392+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading BuiltIn extension: Directory Services (2.0.13.0)",
+    "Properties": {
+      "LineNumber": 40,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3392+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading BuiltIn extension: GoogleApps (2.0.9.0)",
+    "Properties": {
+      "LineNumber": 41,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3611+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading BuiltIn extension: Guest (2.0.3.0)",
+    "Properties": {
+      "LineNumber": 42,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.3713+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Loading BuiltIn extension: UsernamePassword (2.0.5.0)",
+    "Properties": {
+      "LineNumber": 43,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:57:43.4352+10:00",
+    "Level": "Information",
+    "MessageTemplate": "==== HelpCommand ====",
+    "Properties": {
+      "LineNumber": 44,
+      "PID": "15048",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:58:34.8992+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Octopus.Server.exe version 0.0.0-local (0.0.0-local) instance master",
+    "Properties": {
+      "LineNumber": 45,
+      "PID": "35412",
+      "Thread": "1"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2017-07-12T11:58:34.9262+10:00",
+    "Level": "Information",
+    "MessageTemplate": "Environment Information:\r\n  OperatingSystem: Microsoft Windows NT 6.2.9200.0\r\n  OsBitVersion: x64\r\n  Is64BitProcess: True\r\n  CurrentUser: MICHAELNOON1449\\michaelnoonan\r\n  MachineName: MICHAELNOON1449\r\n  ProcessorCount: 8\r\n  CurrentDirectory: c:\\dev\\OctopusDeploy\r\n  TempDirectory: C:\\Users\\michaelnoonan\\AppData\\Local\\Temp\\\r\n  HostProcessName: Octopus.Server\r\n  PID: 35412",
+    "Properties": {
+      "LineNumber": 46,
+      "PID": "35412",
+      "Thread": "1"
+    },
+    "Exception": null
+  }
+]

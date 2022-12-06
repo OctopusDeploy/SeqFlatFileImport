@@ -1,10 +1,10 @@
 # Flat log file to Seq importer
 
-A quick and dirty log file parser and export to Seq, if logging to a friendly format is not available
+A tool for parsing flat log files and importing them into Seq.
 
 Features:
-- Autodetects file type
-- Parses the log entries down for a somewhat structured logging experience (ie log level, time, thread) including certain common/useful messages so that it uses a common message template.
+- Auto-detects file type
+- Parses the log entries down for a somewhat structured logging experience (ie. log level, time, thread) including certain common/useful messages so that it uses a common message template.
 - Supports:
     - Octopus Server Log
     - Web Log
@@ -19,6 +19,14 @@ Features:
 `SeqFlatFileImport.exe c:\logs --batch MyDebuggingTask`
 
 ## Getting Started
-1. Run `build.cmd`
-2. The `artifacts` directory will now contain the standalone exe and a zip thereof
-3. Use `.\scripts\reset-seq.cmd` for a quick way to clean out and reset your local Seq instance
+1. [Install](https://nuke.build/docs/introduction/) and run `nuke` or run the `Default` target from your IDE (eg. Rider with the NUKE plugin)
+2. Running directly:
+   1. See examples above
+3. Running in Docker:
+   1. A docker image with the tag `seq-flat-file-import` is created from the Nuke build
+   2. You will need to run a Seq instance in a separate container
+   3. Example of importing all log files in your current working directory:
+      1. Windows: `docker run --rm -v ${PWD}:/logs seq-flat-file-import --server=http://host.docker.internal:5341 ./logs`
+      2. Linux/Mac: `docker run --rm -v $(pwd):/logs seq-flat-file-import --server=http://host.docker.internal:5341 ./logs`
+
+`.\scripts\reset-seq.cmd` can be used to reset your local Seq instance, however this does not work with Seq instances in a container.

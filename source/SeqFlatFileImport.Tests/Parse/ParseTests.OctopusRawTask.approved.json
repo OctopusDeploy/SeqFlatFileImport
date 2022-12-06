@@ -1,0 +1,6080 @@
+﻿[
+  {
+    "Timestamp": "2016-07-29T04:18:52+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploy OctoFX release 3.2.18987 to Development",
+    "Properties": {
+      "Task ID": "ServerTasks-21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Step 1: Pause for approval does not apply to the current environment, and will not be executed",
+    "Properties": {
+      "Task ID": "ServerTasks-21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "PLN",
+    "MessageTemplate": "Acquire packages",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "PLN",
+    "MessageTemplate": "Step 2: Database",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "PLN",
+    "MessageTemplate": "Step 3: Rate Service",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "PLN",
+    "MessageTemplate": "Step 4: Trading Website",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Guided failure is not enabled for this task",
+    "Properties": {
+      "Task ID": "ServerTasks-21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Acquiring packages",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Making a list of packages to download",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Upload package OctoFX.RateService version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Upload package OctoFX.Database version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Checking package cache for package OctoFX.RateService version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Downloading package OctoFX.RateService version 3.2.18987 from feed: 'https://www.myget.org/F/octopus-samples/api/v2'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloaded packages will be stored in: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:53+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding package (attempt 1 of 5)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:54+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Upload package OctoFX.TradingWebsite version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:54+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Found package OctoFX.RateService version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:54+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloading to: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx\\OctoFX.RateService.3.2.18987_483791B2F278F548A08714D72B4B8189.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SHA1 hash of package OctoFX.RateService is: 5bdf0aa09691d13e02da04e08ba2cf0d1dcad22c",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Checking package cache for package OctoFX.Database version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Downloading package OctoFX.Database version 3.2.18987 from feed: 'https://www.myget.org/F/octopus-samples/api/v2'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloaded packages will be stored in: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding package (attempt 1 of 5)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Found package OctoFX.Database version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:18:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloading to: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx\\OctoFX.Database.3.2.18987_7351AF49B282CD4D8297230A04A900F4.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "This server does not have version 3.3.30 of the Calamari package. It will be pushed automatically.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:00+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading Calamari package",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Calamari\\3.3.30\\Success.txt",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Tentacle version 3.4.0-unstable2137 (3.4.0-unstable.2137+Branch.develop.Sha.776ce511e8b802e4d2775b5ea138020a575df4ca)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Package: C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Work\\20160729041900-2\\Calamari.3.3.30.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Destination: C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Calamari\\3.3.30",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:03+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "88 files extracted",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:04+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Cleaning up old Calamari versions...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:04+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Keeping only Calamari version 3.3.30...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:04+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Found no old versions of Calamari to delete...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SHA1 hash of package OctoFX.Database is: d1954c2fce6764afa21f9a6aaf01f12d49f56ba6",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Checking package cache for package OctoFX.TradingWebsite version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Downloading package OctoFX.TradingWebsite version 3.2.18987 from feed: 'https://www.myget.org/F/octopus-samples/api/v2'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloaded packages will be stored in: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding package (attempt 1 of 5)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Package OctoFX.RateService version 3.2.18987 hash 5bdf0aa09691d13e02da04e08ba2cf0d1dcad22c has not been uploaded.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding earlier packages that have been uploaded to this Tentacle.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "No earlier packages for OctoFX.RateService has been uploaded",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Uploading package OctoFX.RateService",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Requesting upload...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Beginning streaming transfer of OctoFX.RateService.3.2.18987.nupkg-5e9679b8-4778-4bc0-9e53-e6843318c1a4",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.RateService.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Stream transfer complete",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.RateService version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Found package OctoFX.TradingWebsite version 3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Downloading to: C:\\OctopusDev\\master\\Server\\OctopusServer\\PackageCache\\feeds-myget-octofx\\OctoFX.TradingWebsite.3.2.18987_382523299EE0A34E938499A04F44D66A.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Package OctoFX.Database version 3.2.18987 hash d1954c2fce6764afa21f9a6aaf01f12d49f56ba6 has not been uploaded.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding earlier packages that have been uploaded to this Tentacle.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "No earlier packages for OctoFX.Database has been uploaded",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Uploading package OctoFX.Database",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Requesting upload...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Beginning streaming transfer of OctoFX.Database.3.2.18987.nupkg-43c18c08-19a5-4538-ba65-9ab3f3034c5e",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.Database.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Stream transfer complete",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.Database version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:07+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:56+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SHA1 hash of package OctoFX.TradingWebsite is: fd82d4218b6e5e56e441837d295957d4e61ad6e4",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:57+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Package OctoFX.TradingWebsite version 3.2.18987 hash fd82d4218b6e5e56e441837d295957d4e61ad6e4 has not been uploaded.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Finding earlier packages that have been uploaded to this Tentacle.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "No earlier packages for OctoFX.TradingWebsite has been uploaded",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Uploading package OctoFX.TradingWebsite",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Requesting upload...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Beginning streaming transfer of OctoFX.TradingWebsite.3.2.18987.nupkg-e42abd6e-5c22-4df9-b61f-59bf0b742dba",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:58+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "UPD",
+    "MessageTemplate": "Uploading: OctoFX.TradingWebsite.3.2.18987.nupkg",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Stream transfer complete",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01",
+      "Property 3": "Upload package OctoFX.TradingWebsite version 3.2.18987"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "All packages have been acquired",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Acquire Packages completed",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Acquire packages"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Server version: 3.3.25-ci.11+Branch.master.Sha.b5d64a1903c295f2adaeb0c68c7711099be5f9da",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:19:59+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package 'C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.Database.3.2.18987.nupkg-43c18c08-19a5-4538-ba65-9ab3f3034c5e' to machine 'https://localhost:10001/'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:00+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:00+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package:    C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.Database.3.2.18987.nupkg-43c18c08-19a5-4538-ba65-9ab3f3034c5e",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracting package to: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.Database\\3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracted 17 files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Looking for appSettings, applicationSettings, and connectionStrings in any .config files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Updating appSettings, applicationSettings, and connectionStrings in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.Database\\3.2.18987\\OctoFX.Database.exe.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Setting 'OctoFXDatabase' = 'Server=(local)\\SQLExpress;Database=OctoFX-Development;Trusted_connection=true'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "The package has been installed to: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.Database\\3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:01+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "If you would like the package to be installed to an alternative location, please specify the variable 'Octopus.Action.Package.CustomInstallationDirectory'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Beginning database upgrade",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Fetching list of already executed scripts.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "The [SchemaVersions] table could not be found. The database is assumed to be at version 0.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Executing SQL Server script 'OctoFX.Database.Scripts.Script0001 - Initial tables.sql'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Creating the [SchemaVersions] table",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "The [SchemaVersions] table has been created",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Executing SQL Server script 'OctoFX.Database.Scripts.Script0002 - Seed data.sql'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Upgrade successful",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:02+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Success!",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:04+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Adding journal entry:",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:04+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "<Deployment Id=\"9bbad417-5bd0-4168-85a7-c8bf0bd94603\" EnvironmentId=\"Environments-1\" ProjectId=\"Projects-1\" PackageId=\"OctoFX.Database\" PackageVersion=\"3.2.18987\" InstalledOn=\"2016-07-29 04:20:04\" ExtractedFrom=\"C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.Database.3.2.18987.nupkg-43c18c08-19a5-4538-ba65-9ab3f3034c5e\" ExtractedTo=\"C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.Database\\3.2.18987\" RetentionPolicySet=\"Environments-1/Projects-1/Step-Database/Machines-1/&lt;default&gt;\" CustomInstallationDirectory=\"C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.Database\\3.2.18987\" WasSuccessful=\"True\" />",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:04+00:00",
+    "Level": "PLN",
+    "MessageTemplate": "Apply retention policy on Tentacles",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Apply retention policy on Tentacles"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:04+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Database completed",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:05+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 2: Database"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:05+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Server version: 3.3.25-ci.11+Branch.master.Sha.b5d64a1903c295f2adaeb0c68c7711099be5f9da",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:05+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package 'C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.RateService.3.2.18987.nupkg-5e9679b8-4778-4bc0-9e53-e6843318c1a4' to machine 'https://localhost:10001/'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:06+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package:    C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.RateService.3.2.18987.nupkg-5e9679b8-4778-4bc0-9e53-e6843318c1a4",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:06+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracting package to: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracted 13 files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Creating 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_AfterPreDeploy.ps1' from embedded resource",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Executing 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_AfterPreDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:07+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "The OctoFXRateServiceDevelopment service does not exist yet",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Deleting 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_AfterPreDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Looking for appSettings, applicationSettings, and connectionStrings in any .config files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Updating appSettings, applicationSettings, and connectionStrings in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\OctoFX.RateService.exe.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Setting 'OctoFXDatabase' = 'Server=(local)\\SQLExpress;Database=OctoFX-Development;Trusted_connection=true'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "The package has been installed to: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "If you would like the package to be installed to an alternative location, please specify the variable 'Octopus.Action.Package.CustomInstallationDirectory'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Creating 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_BeforePostDeploy.ps1' from embedded resource",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Executing 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_BeforePostDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:08+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "The OctoFXRateServiceDevelopment service does not exist. It will be created.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "sc.exe create \"OctoFXRateServiceDevelopment\" binPath= C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\OctoFX.RateService.exe DisplayName= \"OctoFX Rate Service Development\" depend= \"LanmanWorkstation/TCPIP\" start= \"auto\"",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "[SC] CreateService SUCCESS",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Updating the service description",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "[SC] ChangeServiceConfig2 SUCCESS",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:09+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Starting the OctoFXRateServiceDevelopment service",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Service OctoFXRateServiceDevelopment running",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Deleting 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\\Octopus.Features.WindowsService_BeforePostDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Adding journal entry:",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "<Deployment Id=\"c48486f0-2631-40e9-a13c-b0a168e2a801\" EnvironmentId=\"Environments-1\" ProjectId=\"Projects-1\" PackageId=\"OctoFX.RateService\" PackageVersion=\"3.2.18987\" InstalledOn=\"2016-07-29 04:20:10\" ExtractedFrom=\"C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.RateService.3.2.18987.nupkg-5e9679b8-4778-4bc0-9e53-e6843318c1a4\" ExtractedTo=\"C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\" RetentionPolicySet=\"Environments-1/Projects-1/Step-Rate Service/Machines-1/&lt;default&gt;\" CustomInstallationDirectory=\"C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.RateService\\3.2.18987\" WasSuccessful=\"True\" />",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Rate Service completed",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:10+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 3: Rate Service"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:11+00:00",
+    "Level": "Information",
+    "MessageTemplate": "DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:11+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Remove from Load Balancer",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:11+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Server version: 3.3.25-ci.11+Branch.master.Sha.b5d64a1903c295f2adaeb0c68c7711099be5f9da",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:11+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Executing script on 'DWebApp01'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:12+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Removing from load balancer",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Remove from Load Balancer"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Trading Website",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Server version: 3.3.25-ci.11+Branch.master.Sha.b5d64a1903c295f2adaeb0c68c7711099be5f9da",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:13+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package 'C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.TradingWebsite.3.2.18987.nupkg-e42abd6e-5c22-4df9-b61f-59bf0b742dba' to machine 'https://localhost:10001/'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:14+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Octopus Deploy: Calamari version 3.3.30+Branch.master.Sha.a9a14e37010f232a0b80375a757729f1ef82552b",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:14+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Deploying package:    C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.TradingWebsite.3.2.18987.nupkg-e42abd6e-5c22-4df9-b61f-59bf0b742dba",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:14+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracting package to: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Extracted 153 files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Transforming 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Web.config' using 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Web.Release.config'.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Executing RemoveAttributes (transform line 18, 18)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "on /configuration/system.web/compilation",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Applying to 'compilation' element (source line 18, 6)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Removed 'debug' attribute",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Removed 1 attributes",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Done executing RemoveAttributes",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Looking for appSettings, applicationSettings, and connectionStrings in any .config files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Updating appSettings, applicationSettings, and connectionStrings in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Web.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Setting 'OctoFXDatabase' = 'Server=(local)\\SQLExpress;Database=OctoFX-Development;Trusted_connection=true'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "No matching appSetting, applicationSetting, nor connectionString names were found in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Web.Debug.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "File 'C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Web.Release.config' was interpreted as an XML configuration transform; variable substitution won't be attempted.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Updating appSettings, applicationSettings, and connectionStrings in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\bin\\OctoFX.TradingWebsite.dll.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Setting 'OctoFXDatabase' = 'Server=(local)\\SQLExpress;Database=OctoFX-Development;Trusted_connection=true'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "No matching appSetting, applicationSetting, nor connectionString names were found in: C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\\Views\\Web.config",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:17+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Copying package contents to 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:18+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Copied 153 files",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:18+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Creating 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_BeforePostDeploy.ps1' from embedded resource",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:18+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Executing 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_BeforePostDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Name                           Value                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "----                           -----                                           ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSVersion                      5.0.10586.494                                   ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "BuildVersion                   10.0.10586.494                                  ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "CLRVersion                     4.0.30319.42000                                 ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "WSManStackVersion              3.0                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "PSRemotingProtocolVersion      2.3                                             ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:19+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "SerializationVersion           1.1.0.1                                         ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:20+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Loading Application pool",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:20+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Application pool \"OctoFX - DWebApp01\" already exists",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:20+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Set application pool identity: LocalSystem",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:21+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Set .NET framework version: v4.0",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Loading Site",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Site \"OctoFX - DWebApp01\" already exists",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Loading Site",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Application pool \"OctoFX - DWebApp01\" already assigned to website \"IIS:\\Sites\\OctoFX - DWebApp01\"",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Home directory: C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Comparing existing IIS bindings with configured bindings...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Looks OK",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Bindings are as configured. No changes required.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Anonymous authentication enabled: True",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Applied configuration changes to section \"system.webServer/security/authentication/anonymousAuthentication\" for \"MACHINE/WEBROOT/APPHOST/OctoFX - DWebApp01\" at configuration commit path \"MACHINE/WEBROOT/APPHOST\"",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Basic authentication enabled: False",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Applied configuration changes to section \"system.webServer/security/authentication/basicAuthentication\" for \"MACHINE/WEBROOT/APPHOST/OctoFX - DWebApp01\" at configuration commit path \"MACHINE/WEBROOT/APPHOST\"",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Windows authentication enabled: False",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:22+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Applied configuration changes to section \"system.webServer/security/authentication/windowsAuthentication\" for \"MACHINE/WEBROOT/APPHOST/OctoFX - DWebApp01\" at configuration commit path \"MACHINE/WEBROOT/APPHOST\"",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:23+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Web site is stopped. Attempting to start...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:23+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Attempt 1 of 5 failed: Cannot create a file when that file already exists. (Exception from HRESULT: 0x800700B7)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:23+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Waiting for 2 seconds before retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:26+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:26+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Web site is stopped. Attempting to start...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:26+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Attempt 2 of 5 failed: Cannot create a file when that file already exists. (Exception from HRESULT: 0x800700B7)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:26+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Waiting for 2 seconds before retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:29+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:29+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Web site is stopped. Attempting to start...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:29+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Attempt 3 of 5 failed: Cannot create a file when that file already exists. (Exception from HRESULT: 0x800700B7)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:29+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Waiting for 2 seconds before retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Web site is stopped. Attempting to start...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Attempt 4 of 5 failed: Cannot create a file when that file already exists. (Exception from HRESULT: 0x800700B7)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Waiting for 2 seconds before retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Retrying...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Information",
+    "MessageTemplate": "Web site is stopped. Attempting to start...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "start-webitem : Cannot create a file when that file already exists. (Exception ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "from HRESULT: 0x800700B7)",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "At C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "BeforePostDeploy.ps1:460 char:3",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "+         Start-Website $WebSiteName",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "+         ~~~~~~~~~~~~~~~~~~~~~~~~~~",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "    + CategoryInfo          : InvalidOperation: (:) [Start-WebItem], COMExcept ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "   ion",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "    + FullyQualifiedErrorId : InvalidOperation,Microsoft.IIs.PowerShell.Provid ",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "   er.StartItemCommand",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Deleting 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_BeforePostDeploy.ps1'",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "Script 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_BeforePostDeploy.ps1' returned non-zero exit code: 1",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "Running rollback conventions...",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Adding journal entry:",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "<Deployment Id=\"232b5129-889d-468b-93de-dd0ce59e2930\" EnvironmentId=\"Environments-1\" ProjectId=\"Projects-1\" PackageId=\"OctoFX.TradingWebsite\" PackageVersion=\"3.2.18987\" InstalledOn=\"2016-07-29 04:20:31\" ExtractedFrom=\"C:\\OctopusDev\\master\\Tentacle\\DWebApp01\\Files\\OctoFX.TradingWebsite.3.2.18987.nupkg-e42abd6e-5c22-4df9-b61f-59bf0b742dba\" ExtractedTo=\"C:\\OctopusDev\\master\\Applications\\DWebApp01\\Development\\OctoFX.TradingWebsite\\3.2.18987\" RetentionPolicySet=\"Environments-1/Projects-1/Step-Trading Website/Machines-1/&lt;default&gt;\" CustomInstallationDirectory=\"C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\" WasSuccessful=\"False\" />",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Error",
+    "MessageTemplate": "Script 'C:\\OctopusDev\\Websites\\DWebApp01\\TradingWebsite\\Octopus.Features.IISWebSite_BeforePostDeploy.ps1' returned non-zero exit code: 1",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Fatal",
+    "MessageTemplate": "The remote script failed with exit code 1",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01",
+      "Property 3": "Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Fatal",
+    "MessageTemplate": "Trading Website on DWebApp01",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website",
+      "Property 2": "DWebApp01"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Fatal",
+    "MessageTemplate": "The step failed: Activity Trading Website on DWebApp01 failed with error 'The remote script failed with exit code 1'.",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Step \"Apply Tentacle Retention Policy\" runs only when all previous steps succeeded; skipping",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Apply retention policy on Tentacles"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "ABN",
+    "MessageTemplate": "Abandon",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Apply retention policy on Tentacles"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "Verbose",
+    "MessageTemplate": "Trading Website completed",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:32+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21",
+      "Property 1": "Step 4: Trading Website"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:33+00:00",
+    "Level": "Fatal",
+    "MessageTemplate": "The deployment failed because one or more steps failed. Please see the deployment log for details.",
+    "Properties": {
+      "Task ID": "ServerTasks-21"
+    },
+    "Exception": null
+  },
+  {
+    "Timestamp": "2016-07-29T04:20:34+00:00",
+    "Level": "FIN",
+    "MessageTemplate": "Finished",
+    "Properties": {
+      "Task ID": "ServerTasks-21"
+    },
+    "Exception": null
+  }
+]
